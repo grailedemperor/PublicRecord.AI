@@ -1,0 +1,8 @@
+sqlalchemy
+pymysql
+pandas
+undetected-chromedriver
+fake-useragent
+scikit-learn
+pymongo
+requests
