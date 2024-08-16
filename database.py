@@ -42,6 +42,12 @@ def load_form_data(db, website_name):
     try:
         form_collection = db[f'{website_name}_form_data']
         form_data = pd.DataFrame(list(form_collection.find()))
+
+        if form_data.empty:
+            logging.warning(f"No form data found for {website_name}. Check the database.")
+        else:
+            logging.info(f"Form data loaded successfully for {website_name}.")
+
         return form_data
     except Exception as e:
         logging.error(f"Error loading form data for {website_name}: {e}")
@@ -104,7 +110,9 @@ def upsert_website(db, name, url, category):
             {"$set": website},
             upsert=True
         )
+        logging.info(f"Website {name} upserted successfully with ID: {result.upserted_id}")
         return result.upserted_id or websites_collection.find_one({"url": url})['_id']
+
     except Exception as e:
         logging.error(f"Error upserting website: {e}")
         raise

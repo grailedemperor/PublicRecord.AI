@@ -1,24 +1,35 @@
+import asyncio
+from playwright.async_api import async_playwright
 import os
-from brightdata import ScrapingBrowser
+import logging
 
-# Setup the Scraping Browser with Bright Data credentials and options
-def setup_browser():
-    host = os.getenv('BRIGHTDATA_HOST')
-    port = os.getenv('BRIGHTDATA_PORT')
-    username = os.getenv('BRIGHTDATA_USERNAME')
-    password = os.getenv('BRIGHTDATA_PASSWORD')
+# Load environment variables for Scraping Browser credentials
+from dotenv import load_dotenv
 
-    # Create a Scraping Browser instance with Bright Data's options
-    browser = ScrapingBrowser(
-        host=host,
-        port=port,
-        username=username,
-        password=password,
-        solve_captcha=True,  # Enable CAPTCHA solving
-        proxy_country='US',  # Example of country targeting
-        rotate_ips=True,     # Enable IP rotation
-        logging=True,        # Enable logging
-        debug_mode=True      # Enable debugging mode
-    )
+load_dotenv()
 
-    return browser
+# Function to set up Playwright with Scraping Browser and Bright Data
+async def setup_browser():
+    try:
+        # Bright Data Scraping Browser credentials
+        auth = os.getenv('BRIGHTDATA_AUTH')  # Format: user:pass
+        sbr_ws_cdp = f'wss://{auth}@brd.superproxy.io:9222'
+
+        logging.info("Connecting to Scraping Browser...")
+
+        # Initialize Playwright with Scraping Browser
+        async with async_playwright() as pw:
+            browser = await pw.chromium.connect_over_cdp(sbr_ws_cdp)
+            logging.info("Connected to Scraping Browser")
+            return browser
+
+    except Exception as e:
+        logging.error(f"Error setting up browser: {e}")
+        raise
+
+# Function to close the browser
+async def close_browser(browser):
+    if browser:
+        await browser.close()
+        logging.info("Browser closed")
+

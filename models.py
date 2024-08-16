@@ -10,8 +10,8 @@ def train_field_matching_model():
         ("complete name", "name"),
         ("full name", "name"),
         ("full-name", "name"),
-        ("Email", "email"),
-        ("Email address", "email"),
+        ("email", "email"),
+        ("email address", "email"),
         ("email-address", "email"),
         ("password","password"),
         ("pin","pin"),
@@ -21,6 +21,8 @@ def train_field_matching_model():
         ("phone-number", "phone"),
         ("address 1", "address 1"),
         ("address 2", "address 2"),
+        ("address-1", "address 1"),
+        ("address-2", "address 2"),
         ("zip", "zip"),
         ("zip code", "zip"),
         ("postal code", "zip"),
@@ -47,7 +49,9 @@ def train_field_matching_model():
         ("drivers-license-number", "drivers-license-number"),
         ("license", "drivers-license-number"),
         ("license-#", "drivers-license-number"),
-        ("drivers license #", "drivers-license-number")
+        ("drivers license #", "drivers-license-number"),
+        ("submit", "submit button"),
+        ("confirm", "submit button")
     ]
     texts, labels = zip(*[(desc, field) for field, *descriptions in sample_data for desc in descriptions])
     vectorizer = TfidfVectorizer()

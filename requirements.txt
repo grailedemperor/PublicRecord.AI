@@ -6,3 +6,5 @@ fake-useragent
 scikit-learn
 pymongo
 requests
+playwright
+asyncio

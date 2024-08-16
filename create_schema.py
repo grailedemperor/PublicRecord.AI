@@ -21,8 +21,13 @@ def create_schema():
     DATABASE_URL = f"mongodb://{db_user}:{db_password}@{db_host}/{db_name}"
 
     # Create the MongoDB client
-    client = MongoClient(DATABASE_URL, authSource='admin')
-    db = client[db_name]
+    try:
+        client = MongoClient(DATABASE_URL, authSource='admin')
+        db = client[db_name]
+        print("Successfully connected to MongoDB")
+    except Exception as e:
+        print(f"Error connecting to MongoDB: {str(e)}")
+
 
     # Create the collections and insert sample data
     create_collections_and_insert_data(db)
