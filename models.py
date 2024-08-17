@@ -1,4 +1,3 @@
-from selenium.webdriver.common.by import By
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
@@ -19,6 +18,7 @@ def train_field_matching_model():
         ("cell #", "phone"),
         ("phone number", "phone"),
         ("phone-number", "phone"),
+        ("phone_type","phone_type"),
         ("address 1", "address 1"),
         ("address 2", "address 2"),
         ("address-1", "address 1"),
@@ -28,7 +28,9 @@ def train_field_matching_model():
         ("postal code", "zip"),
         ("city","city"),
         ("state","state"),
+        ("license-state","state"),
         ("country","country"),
+        ("abbreviated-country", "country"),
         ("Home address", "address"),
         ("residential address", "address"),
         ("mailing address", "address"),
@@ -39,6 +41,7 @@ def train_field_matching_model():
         ("social-security-number", "ssn"),
         ("birthday","birthday"),
         ("dob", "date of birth"),
+        ("dob-formatted","dob-formatted"),
         ("birth date", "date of birth"),
         ("birthdate", "date of birth"),
         ("birth-date", "date of birth"),
@@ -51,7 +54,18 @@ def train_field_matching_model():
         ("license-#", "drivers-license-number"),
         ("drivers license #", "drivers-license-number"),
         ("submit", "submit button"),
-        ("confirm", "submit button")
+        ("confirm", "submit button"),
+        ("income","income"),
+        ("employment-status","employment-status"),
+        ("occupation","occupation"),
+        ("rent","rent"),
+        ("terms_conditions", "terms & conditions"),
+        ("captcha","captcha"),
+        ("ssa-verification","ssa-verification"),
+        ("paperless","paperless"),
+        ("citizen","citizen"),
+        ("secondary-citizen","secondary-citizen"),
+        ("bank-account","bank-account")
     ]
     texts, labels = zip(*[(desc, field) for field, *descriptions in sample_data for desc in descriptions])
     vectorizer = TfidfVectorizer()
@@ -60,12 +74,12 @@ def train_field_matching_model():
     model.fit(X, labels)
     return model, vectorizer
 
-def advanced_field_matching(driver, model, vectorizer):
-    elements = driver.find_elements(By.TAG_NAME, "input")
+async def advanced_field_matching(page, model, vectorizer):
+    elements = await page.query_selector_all("input")
     fields = {}
     for element in elements:
-        placeholder = element.get_attribute("placeholder") or ""
-        label = element.get_attribute("label") or ""
+        placeholder = await element.get_attribute("placeholder") or ""
+        label = await element.get_attribute("label") or ""
         text = placeholder + " " + label
         if text.strip():
             prediction = model.predict(vectorizer.transform([text]))[0]

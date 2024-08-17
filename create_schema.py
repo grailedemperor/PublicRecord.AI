@@ -104,7 +104,6 @@ def create_collections_and_insert_data(db):
         {"name": "SageStream", "url": "https://forms.sagestreamllc.com/#/opt-self", "category": "captcha"},
         {"name": "Credit One Prequalify", "url": "https://www.creditonebank.com/pre-qualification/data-entry/index", "category": "single-step"},
         {"name": "IHG Rewards", "url": "https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-6C-US-EN-IHGRCMainPage-JoinCTA", "category": "single-step"},
-        {"name": "Hyatt Rewards", "url": "https://www.hyatt.com/en-US/member/enroll", "category": "single-step"},
         {"name": "Fuel Rewards", "url": "https://www.fuelrewards.com/fuelrewards/signup.html", "category": "multi-step-captcha"}
     ]
     # Use the upsert function to insert or update each website

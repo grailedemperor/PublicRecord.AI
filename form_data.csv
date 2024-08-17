@@ -1,0 +1,181 @@
+website_name,url,field_name,field_type,locator_value,locator_type,optional,rank
+FactorTrust,https://factortrust.com/consumer/optout.aspx,opt-in,radio,ContentPlaceHolder1_rbtnOptIn,ID,FALSE,1
+FactorTrust,https://factortrust.com/consumer/optout.aspx,submit,button,ContentPlaceHolder1_btnConfirm,ID,FALSE,2
+FactorTrust,https://factortrust.com/consumer/optout.aspx,first-name,input,ContentPlaceHolder1_txtFirstName,ID,FALSE,3
+FactorTrust,https://factortrust.com/consumer/optout.aspx,last-name,input,ContentPlaceHolder1_txtLastName,ID,FALSE,4
+FactorTrust,https://factortrust.com/consumer/optout.aspx,ssn_part1,input,ContentPlaceHolder1_ctlSsn_txtThree,ID,FALSE,5
+FactorTrust,https://factortrust.com/consumer/optout.aspx,ssn_part2,input,ContentPlaceHolder1_ctlSsn_txtTwo,ID,FALSE,6
+FactorTrust,https://factortrust.com/consumer/optout.aspx,ssn_part3,input,ContentPlaceHolder1_ctlSsn_txtFour,ID,FALSE,7
+FactorTrust,https://factortrust.com/consumer/optout.aspx,dob_month,select,ContentPlaceHolder1_ctlDob_lstMonth,ID,FALSE,8
+FactorTrust,https://factortrust.com/consumer/optout.aspx,dob_day,select,ContentPlaceHolder1_ctlDob_lstDay,ID,FALSE,9
+FactorTrust,https://factortrust.com/consumer/optout.aspx,dob_year,input,ContentPlaceHolder1_ctlDob_txtYear,ID,FALSE,10
+FactorTrust,https://factortrust.com/consumer/optout.aspx,address-1,input,ContentPlaceHolder1_txtAddress1,ID,FALSE,11
+FactorTrust,https://factortrust.com/consumer/optout.aspx,address-2,input,ContentPlaceHolder1_txtAddress2,ID,FALSE,12
+FactorTrust,https://factortrust.com/consumer/optout.aspx,city,input,ContentPlaceHolder1_txtCity,ID,FALSE,13
+FactorTrust,https://factortrust.com/consumer/optout.aspx,state,select,ContentPlaceHolder1_ctlStates_DropDownList1,ID,FALSE,14
+FactorTrust,https://factortrust.com/consumer/optout.aspx,zip,input,ContentPlaceHolder1_txtZip,ID,FALSE,15
+FactorTrust,https://factortrust.com/consumer/optout.aspx,email,input,ContentPlaceHolder1_txtEmail,ID,FALSE,16
+FactorTrust,https://factortrust.com/consumer/optout.aspx,final-submit,button,ContentPlaceHolder1_btnConfirm,ID,FALSE,17
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,first-name,input,firstName,ID,FALSE,18
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,last-name,input,lastName,ID,FALSE,19
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,address-1,input,address1,ID,FALSE,20
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,address-2,input,div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1),CSS_SELECTOR,TRUE,21
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,city,input,city,ID,FALSE,22
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,state,select,/html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select,XPATH,FALSE,23
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,zip,input,zipCode,ID,FALSE,24
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,ssn_part3,input,ssn,ID,FALSE,25
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,income,input,income,ID,FALSE,26
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,final-submit,button,button.styles_btn__RsfY1,CSS_SELECTOR,FALSE,27
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,.next-button-container > button:nth-child(1),CSS_SELECTOR,FALSE,28
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,first-name,input,FIRST_NAME,ID,FALSE,29
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,last-name,input,LAST_NAME,ID,FALSE,30
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,acquisition-name-section.ng-star-inserted > acquisition-section-container:nth-child(1) > div:nth-child(3) > div:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,31
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,home-address,input,PHYSICAL_COMBINED_ADDRESS,ID,FALSE,32
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,.grv-padding--none,CSS_SELECTOR,FALSE,33
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,email,input,EMAIL,ID,FALSE,34
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,phone-number,input,PHONE_NUMBER,ID,FALSE,35
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,acquisition-contact-section.ng-star-inserted > acquisition-section-container:nth-child(1) > div:nth-child(3) > div:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,36
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,employment-status,radio,EMPLOYMENT:EMP,ID,FALSE,37
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,occupation,input,OCCUPATION,ID,FALSE,38
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,acquisition-employment-section.ng-star-inserted > acquisition-section-container:nth-child(1) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,39
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,income,input,INCOME,ID,FALSE,40
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,rent,input,HOUSING,ID,FALSE,41
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,acquisition-finances-section.ng-star-inserted > acquisition-section-container:nth-child(1) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,42
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,bank-account,radio,BANK_ACCOUNT:CAS,ID,FALSE,43
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,acquisition-banking-section.ng-star-inserted > acquisition-section-container:nth-child(1) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,44
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,div.grv-margin__top--medium-2:nth-child(3) > button:nth-child(1),CSS_SELECTOR,FALSE,45
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,citizen,radio,US_CITIZENSHIP:yes,ID,FALSE,46
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,secondary-citizen,radio,SECONDARY_CITIZENSHIP:no,ID,FALSE,47
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,acquisition-us-citizenship-section.ng-star-inserted > acquisition-section-container:nth-child(1) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,48
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,dob,input,DOB,ID,FALSE,49
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,ssn,input,SSN,ID,FALSE,50
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,ssn,input,CONFIRM_SSN,ID,FALSE,51
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,div.grv-margin__top--large-2:nth-child(4) > button:nth-child(1),CSS_SELECTOR,FALSE,52
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,ssa-verification,radio,SSN_VERIFICATION_AUTHORIZATION,ID,FALSE,53
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,paperless,radio,ELECTRONIC_COMMUNICATIONS_DISCLOSURE,ID,FALSE,54
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,.continue-btn,CSS_SELECTOR,FALSE,55
+Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,final-submit,button,button.grv-col:nth-child(3),CSS_SELECTOR,FALSE,56
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,first-name,input,personalInformationForm.firstName,ID,FALSE,57
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,last-name,input,personalInformationForm.lastName,ID,FALSE,58
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,dob_month,select,personalInformationForm.dateOfBirth.month,ID,FALSE,59
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,dob_day,select,personalInformationForm.dateOfBirth.day,ID,FALSE,60
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,dob_year,select,personalInformationForm.dateOfBirth.year,ID,FALSE,61
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,gender,select,personalInformationForm.gender,ID,FALSE,62
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,country,input,addressInformationForm.country,ID,FALSE,63
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,address-1,input,addressInformationForm.address1,ID,FALSE,64
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,address-2,input,addressInformationForm.address2,ID,FALSE,65
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,city,input,addressInformationForm.city,ID,FALSE,66
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,state,select,addressInformationForm.usState,ID,FALSE,67
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,email,input,emailPhoneForm.email,ID,FALSE,68
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,email,input,emailPhoneForm.confirmEmail,ID,FALSE,69
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,phone_type ,select,emailPhoneForm.phones0.type,ID,FALSE,70
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,country,select,emailPhoneForm.phones0.countryCode,ID,FALSE,71
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,phone,input,emailPhoneForm.phones0.number,ID,FALSE,72
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,password,input,yourAccountForm.password,ID,FALSE,73
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,password,input,yourAccountForm.confirmPassword,ID,FALSE,74
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,terms_conditons,checkbox,acceptTermAndConditions,ID,FALSE,75
+American Airlines AAdvantage Enrollment,https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA,final-submit,button,continueButton,ID,FALSE,76
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,first-name,input,firstName,ID,FALSE,77
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,last-name,input,lastName,ID,FALSE,78
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,email,input,email,ID,FALSE,79
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,phone,input,phone,ID,FALSE,80
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,ssn,input,sSn,ID,FALSE,81
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,dob,input,dOb,ID,FALSE,82
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,submit,button,next1,ID,FALSE,83
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,address-1,input,aDdress,ID,FALSE,84
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,address-2,input,address2,ID,FALSE,85
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,zip,input,zIp,ID,FALSE,86
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,city,input,cIty,ID,FALSE,87
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,state,select,stateName,ID,FALSE,88
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,captcha,captcha,g-recaptcha,ID,FALSE,89
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,ssa-verification,checkbox,agreeReadNew,ID,FALSE,90
+US Alliance Prequalify,https://www.usalliance.org/pre-qualification,final-submit,button,seeOffer,ID,FALSE,91
+OptOutPreScreen,https://www.optoutprescreen.com,submit,button,button.primaryBtn:nth-child(2),CSS_SELECTOR,FALSE,92
+OptOutPreScreen,https://www.optoutprescreen.com/selection,submit,button,button.primaryBtn:nth-child(2),CSS_SELECTOR,FALSE,93
+OptOutPreScreen,https://www.optoutprescreen.com/form,first-name,input,opt_fname,ID,FALSE,94
+OptOutPreScreen,https://www.optoutprescreen.com/form,last-name,input,opt_lname,ID,FALSE,95
+OptOutPreScreen,https://www.optoutprescreen.com/form,ssn_part1,input,ssn_1,ID,FALSE,96
+OptOutPreScreen,https://www.optoutprescreen.com/form,ssn_part2,input,ssn_2,ID,FALSE,97
+OptOutPreScreen,https://www.optoutprescreen.com/form,ssn_part3,input,ssn_3,ID,FALSE,98
+OptOutPreScreen,https://www.optoutprescreen.com/form,dob-formatted,input,datepicker,ID,FALSE,99
+OptOutPreScreen,https://www.optoutprescreen.com/form,address-1,input,opt_street,ID,FALSE,100
+OptOutPreScreen,https://www.optoutprescreen.com/form,address-2,input,opt_apt,ID,FALSE,101
+OptOutPreScreen,https://www.optoutprescreen.com/form,city,input,opt_city,ID,FALSE,102
+OptOutPreScreen,https://www.optoutprescreen.com/form,state,select,opt_state,ID,FALSE,103
+OptOutPreScreen,https://www.optoutprescreen.com/form,zip,input,opt_zip,ID,FALSE,104
+OptOutPreScreen,https://www.optoutprescreen.com/form,phone,input,phone,ID,FALSE,105
+OptOutPreScreen,https://www.optoutprescreen.com/form,captcha,captcha,captchaSection,ID,FALSE,106
+OptOutPreScreen,https://www.optoutprescreen.com/form,final-submit,button,.submitBtn,CSS_SELECTOR,FALSE,107
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_3stepbn_text,first-name,input,input_field_firstname_1,ID,FALSE,108
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_4stepbn_text,last-name,input,input_field_lastname_2,ID,FALSE,109
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_5stepbn_text,email,input,input_field_email_3,ID,FALSE,110
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_6stepbn_text,phone,input,input_field_phone_4,ID,FALSE,111
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_7stepbn_text,dob_month,input,input_field_dob-month_5,ID,FALSE,112
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_8stepbn_text,dob_day,input,input_field_dob-day_5,ID,FALSE,113
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_9stepbn_text,password,input,input_field_password_6,ID,FALSE,114
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_10stepbn_text,pin,input,input_field_pin_7,ID,FALSE,115
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_11stepbn_text,terms_conditons,checkbox,#tc_checkbox1 > span:nth-child(2),ID,FALSE,116
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_12stepbn_text,paperless,checkbox,#io_checkbox2 > span:nth-child(2),ID,FALSE,117
+ExxonRewards,https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_13stepbn_text,final-submit,button,link_btn_create_12,ID,FALSE,118
+SageStream,https://forms.sagestreamllc.com/#/opt-self,first-name,input,div.xs12:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,119
+SageStream,https://forms.sagestreamllc.com/#/opt-self,last-name,input,div.flex:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,120
+SageStream,https://forms.sagestreamllc.com/#/opt-self,dob,input,div.flex:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,121
+SageStream,https://forms.sagestreamllc.com/#/opt-self,ssn,input,div.flex:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,122
+SageStream,https://forms.sagestreamllc.com/#/opt-self,phone,input,div.flex:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,123
+SageStream,https://forms.sagestreamllc.com/#/opt-self,email,input,div.flex:nth-child(8) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,124
+SageStream,https://forms.sagestreamllc.com/#/opt-self,address-1,input,div.flex:nth-child(9) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,125
+SageStream,https://forms.sagestreamllc.com/#/opt-self,address-2,input,div.flex:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,126
+SageStream,https://forms.sagestreamllc.com/#/opt-self,city,input,div.flex:nth-child(11) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,127
+SageStream,https://forms.sagestreamllc.com/#/opt-self,state,input,.v-select--is-menu-active > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1),CSS_SELECTOR,FALSE,128
+SageStream,https://forms.sagestreamllc.com/#/opt-self,state,input,div.flex:nth-child(13) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1),CSS_SELECTOR,FALSE,129
+SageStream,https://forms.sagestreamllc.com/#/opt-self,zip,input,div.flex:nth-child(14) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,130
+SageStream,https://forms.sagestreamllc.com/#/opt-self,license,input,div.flex:nth-child(15) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(2),CSS_SELECTOR,FALSE,131
+SageStream,https://forms.sagestreamllc.com/#/opt-self,license-state,input,div.flex:nth-child(16) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1),CSS_SELECTOR,FALSE,132
+SageStream,https://forms.sagestreamllc.com/#/opt-self,opt-in,radio,div.v-radio:nth-child(3) > div:nth-child(1) > input:nth-child(1),CSS_SELECTOR,FALSE,133
+SageStream,https://forms.sagestreamllc.com/#/opt-self,terms_conditons,checkbox,div.v-input:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1),CSS_SELECTOR,FALSE,134
+SageStream,https://forms.sagestreamllc.com/#/opt-self,captcha,captcha,.mt-1 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > iframe:nth-child(1),CSS_SELECTOR,FALSE,135
+SageStream,https://forms.sagestreamllc.com/#/opt-self,final-submit,button,div.justify-center:nth-child(2) > button:nth-child(1),CSS_SELECTOR,FALSE,136
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,first-name,input,firstNamePQDE,ID,FALSE,137
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,last-name,input,lastNamePQDE,ID,FALSE,138
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,address-1,input,mailingAddressPQDE,ID,FALSE,139
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,address-2,input,aptUnitPQDE,ID,FALSE,140
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,city,input,cityPQDE,ID,FALSE,141
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,state,select,statePQDE,ID,FALSE,142
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,zip,input,zipCodePQDE,ID,FALSE,143
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,email,input,emailPQDE,ID,FALSE,144
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,ssn,input,socialSecurityPQDE,ID,FALSE,145
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,dob_month,input,input_date__month--dateOfBirthPQDE,ID,FALSE,146
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,dob_day,input,input_date__day--dateOfBirthPQDE,ID,FALSE,147
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,dob_year,input,input_date__year--dateOfBirthPQDE,ID,FALSE,148
+Credit One Prequalify,https://www.creditonebank.com/pre-qualification/data-entry/index,final-submit,button,BasicSubmitForm,ID,FALSE,149
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-6C-US-EN-IHGRCMainPage-JoinCTA,first-name,input,firstName,ID,FALSE,150
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-7C-US-EN-IHGRCMainPage-JoinCTA,last-name,input,lastName,ID,FALSE,151
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-8C-US-EN-IHGRCMainPage-JoinCTA,email,input,email,ID,FALSE,152
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-9C-US-EN-IHGRCMainPage-JoinCTA,email,input,confirmEmail,ID,FALSE,153
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-10C-US-EN-IHGRCMainPage-JoinCTA,password,input,password,ID,FALSE,154
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-11C-US-EN-IHGRCMainPage-JoinCTA,password,input,confirmPassword,ID,FALSE,155
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-12C-US-EN-IHGRCMainPage-JoinCTA,country,select,country,ID,FALSE,156
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-13C-US-EN-IHGRCMainPage-JoinCTA,address-1,input,address1,ID,FALSE,157
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-14C-US-EN-IHGRCMainPage-JoinCTA,address-2,input,address2,ID,FALSE,158
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-15C-US-EN-IHGRCMainPage-JoinCTA,city,input,city,ID,FALSE,159
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-16C-US-EN-IHGRCMainPage-JoinCTA,state,input,state,ID,FALSE,160
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-17C-US-EN-IHGRCMainPage-JoinCTA,zip,input,zipCode,ID,FALSE,161
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-18C-US-EN-IHGRCMainPage-JoinCTA,terms_conditons,checkbox,form.ng-untouched > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),CSS_SELECTOR,FALSE,162
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-19C-US-EN-IHGRCMainPage-JoinCTA,paperless,checkbox,div.mt-20:nth-child(2) > div:nth-child(1) > div:nth-child(2),CSS_SELECTOR,FALSE,163
+IHG Rewards,https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-20C-US-EN-IHGRCMainPage-JoinCTA,final-submit,button,.hThree,CSS_SELECTOR,FALSE,164
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,email,input,registerEmail,ID,FALSE,165
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,email,input,emailConfirm,ID,FALSE,166
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,first-name,input,firstName,ID,FALSE,167
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,last-name,input,lastName,ID,FALSE,168
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,phone,input,primaryPhone,ID,FALSE,169
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,zip,input,zip,ID,FALSE,170
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,state,select,state,ID,FALSE,171
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,city,input,city,ID,FALSE,172
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,address-1,input,address1,ID,FALSE,173
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,address-2,input,address2,ID,FALSE,174
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup.html,submit,button,NextBut,ID,FALSE,175
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup-security.html,password,input,registerPassword,ID,FALSE,176
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup-security.html,password,input,passwordConfirm,ID,FALSE,177
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup-security.html,captcha,captcha,reCaptchaDiv,ID,FALSE,178
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup-security.html,terms_conditons,checkbox,termsConditions,ID,FALSE,179
+Fuel Rewards,https://www.fuelrewards.com/fuelrewards/signup-security.html,final-submit,button,securityBtn,ID,FALSE,180
