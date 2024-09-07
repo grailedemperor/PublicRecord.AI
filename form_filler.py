@@ -408,7 +408,7 @@ async def fill_and_submit_form(browser, url, individual_data, form_data, field_l
             raise RuntimeError("Browser instance is not initialized.")
         
         # Create a new browser context
-        context = await browser.new_context(user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:129.0) Gecko/20100101 Firefox/129.0", viewport={"width": 990, "height": 1380})
+        context = await browser.new_context(user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:129.0) Gecko/20100101 Firefox/129.0", viewport={"width": 2000, "height": 1099})
         page = await context.new_page()
 
         # Navigate to the URL
