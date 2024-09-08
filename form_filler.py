@@ -1,5 +1,6 @@
 import os
 import json
+import pandas as pd
 import difflib  # For fuzzy matching
 from bson import ObjectId
 import logging
@@ -97,16 +98,32 @@ if not os.path.exists(SUCCESSFUL_SUBMISSION_DIR):
 
 def log_successful_submission(individual_name, website_name, submission_data, individual_data, url):
     convert_objectid(individual_data)
+
+    # Ensure submission_data and individual_data are JSON serializable
+    def ensure_json_serializable(data):
+        json_serializable_data = {}
+        for key, value in data.items():
+            if isinstance(value, pd.DataFrame):  # If it's a DataFrame, convert to dict
+                json_serializable_data[key] = value.to_dict()
+            elif isinstance(value, (list, dict, str, int, float, bool)) or value is None:
+                json_serializable_data[key] = value  # Already JSON serializable
+            else:
+                json_serializable_data[key] = str(value)  # Convert non-serializable types to string
+        return json_serializable_data
+
+    submission_data_clean = ensure_json_serializable(submission_data)
     
     log_data = {
         "individual_name": individual_name,
         "website_name": website_name,
         "url": url,
-        "submitted_data": submission_data,
+        "submitted_data": submission_data_clean,
     }
+    
     log_file_path = f"successful_submission/{individual_name}_{website_name}.json"
     with open(log_file_path, 'w') as f:
         json.dump(log_data, f, indent=4)
+
     logging.info(f"Logged successful submission for {individual_name} on {website_name}.")
 
 async def identify_and_click_field(page, selector, field_name, field_type, individual_data, submission_data):

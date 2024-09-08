@@ -2,23 +2,4 @@
     "individual_name": "Yasin Omar",
     "website_name": "FactorTrust",
     "url": "https://factortrust.com/consumer/optout.aspx",
-    "submitted_data": {
-        "opt-in": "radio",
-        "submit": "button",
-        "first-name": "input",
-        "last-name": "input",
-        "ssn_part1": "input",
-        "ssn_part2": "input",
-        "ssn_part3": "input",
-        "dob_month": "select",
-        "dob_day": "select",
-        "dob_year": "input",
-        "address-1": "input",
-        "address-2": "input",
-        "city": "input",
-        "state": "select",
-        "zip": "input",
-        "email": "input",
-        "final-submit": "button"
-    }
-}
+    "submitted_data": 
