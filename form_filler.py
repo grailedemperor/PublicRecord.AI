@@ -111,7 +111,7 @@ def log_successful_submission(individual_name, website_name, submission_data, in
                 json_serializable_data[key] = str(value)  # Convert non-serializable types to string
         return json_serializable_data
 
-    submission_data_clean = ensure_json_serializable(submission_data)
+    submission_data_clean = ensure_json_serializable(individual_data)
     
     log_data = {
         "individual_name": individual_name,
@@ -119,7 +119,7 @@ def log_successful_submission(individual_name, website_name, submission_data, in
         "url": url,
         "submitted_data": submission_data_clean,
     }
-    
+
     log_file_path = f"successful_submission/{individual_name}_{website_name}.json"
     with open(log_file_path, 'w') as f:
         json.dump(log_data, f, indent=4)

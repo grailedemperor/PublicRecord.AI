@@ -9734,3 +9734,586 @@ website_name                                      FactorTrust
 Name: 3, dtype: object
 2024-09-07 20:03:57,660 - INFO - Field: last-name, Selector: ContentPlaceHolder1_txtLastName, Type: input
 2024-09-07 20:03:57,660 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtLastName
+2024-09-08 10:44:45,764 - INFO - Setting up the database connection...
+2024-09-08 10:44:45,865 - INFO - Database connection established.
+2024-09-08 10:44:50,087 - INFO - Setting up the Scraping Browser...
+2024-09-08 10:44:50,087 - INFO - Connecting to Scraping Browser...
+2024-09-08 10:44:50,966 - INFO - Connected to Scraping Browser
+2024-09-08 10:44:50,967 - INFO - Browser set up successfully.
+2024-09-08 10:44:50,967 - INFO - Loading websites from the database...
+2024-09-08 10:44:50,991 - INFO - Websites loaded: [{'_id': ObjectId('66dcd095bd6a0335850c1726'), 'url': 'https://factortrust.com/consumer/optout.aspx', 'category': 'multi-step', 'name': 'FactorTrust'}, {'_id': ObjectId('66dcd095bd6a0335850c1728'), 'url': 'https://card.americanexpress.com/d/pre-qualified-offers/', 'category': 'single-step', 'name': 'AMEX Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c172a'), 'url': 'https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav', 'category': 'multi-step', 'name': 'Capital One Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c172c'), 'url': 'https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA', 'category': 'single-step', 'name': 'American Airlines AAdvantage Enrollment'}, {'_id': ObjectId('66dcd095bd6a0335850c172e'), 'url': 'https://www.usalliance.org/pre-qualification', 'category': 'multi-step', 'name': 'US Alliance Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c1730'), 'url': 'https://www.optoutprescreen.com', 'category': 'multi-step-captcha', 'name': 'OptOutPreScreen'}, {'_id': ObjectId('66dcd095bd6a0335850c1732'), 'url': 'https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_3stepbn_text', 'category': 'single-step', 'name': 'ExxonRewards'}, {'_id': ObjectId('66dcd095bd6a0335850c1734'), 'url': 'https://forms.sagestreamllc.com/#/opt-self', 'category': 'captcha', 'name': 'SageStream'}, {'_id': ObjectId('66dcd095bd6a0335850c1736'), 'url': 'https://www.creditonebank.com/pre-qualification/data-entry/index', 'category': 'single-step', 'name': 'Credit One Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c1738'), 'url': 'https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-6C-US-EN-IHGRCMainPage-JoinCTA', 'category': 'single-step', 'name': 'IHG Rewards'}, {'_id': ObjectId('66dcd095bd6a0335850c173a'), 'url': 'https://www.fuelrewards.com/fuelrewards/signup.html', 'category': 'multi-step-captcha', 'name': 'Fuel Rewards'}]
+2024-09-08 10:44:50,992 - INFO - Training the field matching model...
+2024-09-08 10:44:50,997 - INFO - Model training completed.
+2024-09-08 10:44:50,997 - INFO - Starting to process websites asynchronously...
+2024-09-08 10:44:50,998 - INFO - Starting submission process for individual: Yasin Omar
+2024-09-08 10:44:51,010 - INFO - Cleaned form_data:                          _id  ... website_name
+0   66dd0f01bd6a0335850c30f1  ...  FactorTrust
+1   66dd0f01bd6a0335850c30f3  ...  FactorTrust
+2   66dd0f01bd6a0335850c30f5  ...  FactorTrust
+3   66dd0f01bd6a0335850c30f7  ...  FactorTrust
+4   66dd0f01bd6a0335850c30f9  ...  FactorTrust
+5   66dd0f01bd6a0335850c30fb  ...  FactorTrust
+6   66dd0f01bd6a0335850c30fd  ...  FactorTrust
+7   66dd0f01bd6a0335850c30ff  ...  FactorTrust
+8   66dd0f01bd6a0335850c3101  ...  FactorTrust
+9   66dd0f01bd6a0335850c3103  ...  FactorTrust
+10  66dd0f01bd6a0335850c3105  ...  FactorTrust
+11  66dd0f01bd6a0335850c3107  ...  FactorTrust
+12  66dd0f01bd6a0335850c3109  ...  FactorTrust
+13  66dd0f01bd6a0335850c310b  ...  FactorTrust
+14  66dd0f01bd6a0335850c310d  ...  FactorTrust
+15  66dd0f01bd6a0335850c310f  ...  FactorTrust
+16  66dd0f01bd6a0335850c3111  ...  FactorTrust
+
+[17 rows x 9 columns]
+2024-09-08 10:44:51,012 - INFO - Form data loaded successfully for FactorTrust.
+2024-09-08 10:44:51,019 - INFO - Locators data for FactorTrust: 
+                         _id  ... website_name
+0   66dd0f01bd6a0335850c30f1  ...  FactorTrust
+1   66dd0f01bd6a0335850c30f3  ...  FactorTrust
+2   66dd0f01bd6a0335850c30f5  ...  FactorTrust
+3   66dd0f01bd6a0335850c30f7  ...  FactorTrust
+4   66dd0f01bd6a0335850c30f9  ...  FactorTrust
+5   66dd0f01bd6a0335850c30fb  ...  FactorTrust
+6   66dd0f01bd6a0335850c30fd  ...  FactorTrust
+7   66dd0f01bd6a0335850c30ff  ...  FactorTrust
+8   66dd0f01bd6a0335850c3101  ...  FactorTrust
+9   66dd0f01bd6a0335850c3103  ...  FactorTrust
+10  66dd0f01bd6a0335850c3105  ...  FactorTrust
+11  66dd0f01bd6a0335850c3107  ...  FactorTrust
+12  66dd0f01bd6a0335850c3109  ...  FactorTrust
+13  66dd0f01bd6a0335850c310b  ...  FactorTrust
+14  66dd0f01bd6a0335850c310d  ...  FactorTrust
+15  66dd0f01bd6a0335850c310f  ...  FactorTrust
+16  66dd0f01bd6a0335850c3111  ...  FactorTrust
+
+[17 rows x 9 columns]
+2024-09-08 10:44:51,020 - INFO - Attempting to create a new page for Yasin Omar on FactorTrust.
+2024-09-08 10:44:51,603 - INFO - Navigating to URL: https://factortrust.com/consumer/optout.aspx for FactorTrust.
+2024-09-08 10:44:54,603 - INFO - Page loaded successfully for FactorTrust with status 200.
+2024-09-08 10:44:54,605 - INFO - Processing field at index 0 (Rank: 1): _id                                  66dd0f01bd6a0335850c30f1
+field_name                                             opt-in
+field_type                                              radio
+locator_type                                               ID
+locator_value                   ContentPlaceHolder1_rbtnOptIn
+optional                                                False
+rank                                                        1
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 0, dtype: object
+2024-09-08 10:44:54,607 - INFO - Field: opt-in, Selector: ContentPlaceHolder1_rbtnOptIn, Type: radio
+2024-09-08 10:44:54,607 - INFO - Waiting for element with selector: ContentPlaceHolder1_rbtnOptIn
+2024-09-08 10:44:56,617 - ERROR - Error scrolling to element ContentPlaceHolder1_rbtnOptIn: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_rbtnOptIn") to be visible
+
+2024-09-08 10:44:56,618 - INFO - Waiting for element with selector: ContentPlaceHolder1_rbtnOptIn
+2024-09-08 10:44:56,618 - INFO - Mapped field opt-in to opt-in
+2024-09-08 10:44:57,073 - INFO - Element with selector: ContentPlaceHolder1_rbtnOptIn found.
+2024-09-08 10:44:58,251 - INFO - Clicked opt-in successfully.
+2024-09-08 10:44:59,258 - INFO - Processing field at index 1 (Rank: 2): _id                                  66dd0f01bd6a0335850c30f3
+field_name                                             submit
+field_type                                             button
+locator_type                                               ID
+locator_value                  ContentPlaceHolder1_btnConfirm
+optional                                                False
+rank                                                        2
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 1, dtype: object
+2024-09-08 10:44:59,260 - INFO - Field: submit, Selector: ContentPlaceHolder1_btnConfirm, Type: button
+2024-09-08 10:44:59,260 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-08 10:45:01,265 - ERROR - Error scrolling to element ContentPlaceHolder1_btnConfirm: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_btnConfirm") to be visible
+
+2024-09-08 10:45:01,267 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-08 10:45:01,268 - INFO - Mapped field submit to submit
+2024-09-08 10:45:01,808 - INFO - Element with selector: ContentPlaceHolder1_btnConfirm found.
+2024-09-08 10:45:02,815 - INFO - Submitting form via submit button.
+2024-09-08 10:45:04,353 - INFO - Clicked submit successfully.
+2024-09-08 10:45:05,359 - INFO - Processing field at index 2 (Rank: 3): _id                                  66dd0f01bd6a0335850c30f5
+field_name                                         first-name
+field_type                                              input
+locator_type                                               ID
+locator_value                ContentPlaceHolder1_txtFirstName
+optional                                                False
+rank                                                        3
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 2, dtype: object
+2024-09-08 10:45:05,361 - INFO - Field: first-name, Selector: ContentPlaceHolder1_txtFirstName, Type: input
+2024-09-08 10:45:05,361 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtFirstName
+2024-09-08 10:45:07,363 - ERROR - Error scrolling to element ContentPlaceHolder1_txtFirstName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtFirstName") to be visible
+
+2024-09-08 10:45:07,364 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtFirstName
+2024-09-08 10:45:07,365 - INFO - Mapped field first-name to first name
+2024-09-08 10:45:07,818 - INFO - Element with selector: ContentPlaceHolder1_txtFirstName found.
+2024-09-08 10:45:08,751 - INFO - Filling field first-name with data: Yasin
+2024-09-08 10:45:09,114 - INFO - Clicked first-name successfully.
+2024-09-08 10:45:10,120 - INFO - Processing field at index 3 (Rank: 4): _id                                  66dd0f01bd6a0335850c30f7
+field_name                                          last-name
+field_type                                              input
+locator_type                                               ID
+locator_value                 ContentPlaceHolder1_txtLastName
+optional                                                False
+rank                                                        4
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 3, dtype: object
+2024-09-08 10:45:10,122 - INFO - Field: last-name, Selector: ContentPlaceHolder1_txtLastName, Type: input
+2024-09-08 10:45:10,122 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtLastName
+2024-09-08 10:45:12,125 - ERROR - Error scrolling to element ContentPlaceHolder1_txtLastName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtLastName") to be visible
+
+2024-09-08 10:45:12,127 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtLastName
+2024-09-08 10:45:12,127 - INFO - Mapped field last-name to last name
+2024-09-08 10:45:12,585 - INFO - Element with selector: ContentPlaceHolder1_txtLastName found.
+2024-09-08 10:45:13,489 - INFO - Filling field last-name with data: Omar
+2024-09-08 10:45:13,855 - INFO - Clicked last-name successfully.
+2024-09-08 10:45:14,857 - INFO - Processing field at index 4 (Rank: 5): _id                                  66dd0f01bd6a0335850c30f9
+field_name                                          ssn_part1
+field_type                                              input
+locator_type                                               ID
+locator_value             ContentPlaceHolder1_ctlSsn_txtThree
+optional                                                False
+rank                                                        5
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 4, dtype: object
+2024-09-08 10:45:14,859 - INFO - Field: ssn_part1, Selector: ContentPlaceHolder1_ctlSsn_txtThree, Type: input
+2024-09-08 10:45:14,859 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtThree
+2024-09-08 10:45:16,861 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlSsn_txtThree: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlSsn_txtThree") to be visible
+
+2024-09-08 10:45:16,862 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtThree
+2024-09-08 10:45:16,863 - INFO - Mapped field ssn_part1 to ssn_part1
+2024-09-08 10:45:17,318 - INFO - Element with selector: ContentPlaceHolder1_ctlSsn_txtThree found.
+2024-09-08 10:45:18,202 - INFO - Filling field ssn_part1 with data: 617
+2024-09-08 10:45:18,563 - INFO - Clicked ssn_part1 successfully.
+2024-09-08 10:45:19,566 - INFO - Processing field at index 5 (Rank: 6): _id                                  66dd0f01bd6a0335850c30fb
+field_name                                          ssn_part2
+field_type                                              input
+locator_type                                               ID
+locator_value               ContentPlaceHolder1_ctlSsn_txtTwo
+optional                                                False
+rank                                                        6
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 5, dtype: object
+2024-09-08 10:45:19,568 - INFO - Field: ssn_part2, Selector: ContentPlaceHolder1_ctlSsn_txtTwo, Type: input
+2024-09-08 10:45:19,568 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtTwo
+2024-09-08 10:45:21,584 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlSsn_txtTwo: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlSsn_txtTwo") to be visible
+
+2024-09-08 10:45:21,586 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtTwo
+2024-09-08 10:45:21,587 - INFO - Mapped field ssn_part2 to ssn_part2
+2024-09-08 10:45:22,030 - INFO - Element with selector: ContentPlaceHolder1_ctlSsn_txtTwo found.
+2024-09-08 10:45:22,922 - INFO - Filling field ssn_part2 with data: 80
+2024-09-08 10:45:23,276 - INFO - Clicked ssn_part2 successfully.
+2024-09-08 10:45:24,279 - INFO - Processing field at index 6 (Rank: 7): _id                                  66dd0f01bd6a0335850c30fd
+field_name                                          ssn_part3
+field_type                                              input
+locator_type                                               ID
+locator_value              ContentPlaceHolder1_ctlSsn_txtFour
+optional                                                False
+rank                                                        7
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 6, dtype: object
+2024-09-08 10:45:24,281 - INFO - Field: ssn_part3, Selector: ContentPlaceHolder1_ctlSsn_txtFour, Type: input
+2024-09-08 10:45:24,281 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtFour
+2024-09-08 10:45:26,296 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlSsn_txtFour: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlSsn_txtFour") to be visible
+
+2024-09-08 10:45:26,297 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtFour
+2024-09-08 10:45:26,298 - INFO - Mapped field ssn_part3 to ssn_part3
+2024-09-08 10:45:26,742 - INFO - Element with selector: ContentPlaceHolder1_ctlSsn_txtFour found.
+2024-09-08 10:45:27,633 - INFO - Filling field ssn_part3 with data: 5096
+2024-09-08 10:45:27,986 - INFO - Clicked ssn_part3 successfully.
+2024-09-08 10:45:29,000 - INFO - Processing field at index 7 (Rank: 8): _id                                  66dd0f01bd6a0335850c30ff
+field_name                                          dob_month
+field_type                                             select
+locator_type                                               ID
+locator_value             ContentPlaceHolder1_ctlDob_lstMonth
+optional                                                False
+rank                                                        8
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 7, dtype: object
+2024-09-08 10:45:29,002 - INFO - Field: dob_month, Selector: ContentPlaceHolder1_ctlDob_lstMonth, Type: select
+2024-09-08 10:45:29,003 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstMonth
+2024-09-08 10:45:31,013 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlDob_lstMonth: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlDob_lstMonth") to be visible
+
+2024-09-08 10:45:31,013 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstMonth
+2024-09-08 10:45:31,014 - INFO - Mapped field dob_month to dob_month
+2024-09-08 10:45:31,458 - INFO - Element with selector: ContentPlaceHolder1_ctlDob_lstMonth found.
+2024-09-08 10:45:32,411 - INFO - Selecting option for dob_month: 10
+2024-09-08 10:45:32,672 - INFO - Clicked dob_month successfully.
+2024-09-08 10:45:33,683 - INFO - Processing field at index 8 (Rank: 9): _id                                  66dd0f01bd6a0335850c3101
+field_name                                            dob_day
+field_type                                             select
+locator_type                                               ID
+locator_value               ContentPlaceHolder1_ctlDob_lstDay
+optional                                                False
+rank                                                        9
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 8, dtype: object
+2024-09-08 10:45:33,684 - INFO - Field: dob_day, Selector: ContentPlaceHolder1_ctlDob_lstDay, Type: select
+2024-09-08 10:45:33,685 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstDay
+2024-09-08 10:45:35,701 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlDob_lstDay: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlDob_lstDay") to be visible
+
+2024-09-08 10:45:35,702 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstDay
+2024-09-08 10:45:35,703 - INFO - Mapped field dob_day to dob_day
+2024-09-08 10:45:36,141 - INFO - Element with selector: ContentPlaceHolder1_ctlDob_lstDay found.
+2024-09-08 10:45:37,037 - INFO - Selecting option for dob_day: 22
+2024-09-08 10:45:37,299 - INFO - Clicked dob_day successfully.
+2024-09-08 10:45:38,313 - INFO - Processing field at index 9 (Rank: 10): _id                                  66dd0f01bd6a0335850c3103
+field_name                                           dob_year
+field_type                                              input
+locator_type                                               ID
+locator_value              ContentPlaceHolder1_ctlDob_txtYear
+optional                                                False
+rank                                                       10
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 9, dtype: object
+2024-09-08 10:45:38,315 - INFO - Field: dob_year, Selector: ContentPlaceHolder1_ctlDob_txtYear, Type: input
+2024-09-08 10:45:38,316 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_txtYear
+2024-09-08 10:45:40,322 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlDob_txtYear: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlDob_txtYear") to be visible
+
+2024-09-08 10:45:40,324 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_txtYear
+2024-09-08 10:45:40,324 - INFO - Mapped field dob_year to dob_year
+2024-09-08 10:45:40,791 - INFO - Element with selector: ContentPlaceHolder1_ctlDob_txtYear found.
+2024-09-08 10:45:41,684 - INFO - Filling field dob_year with data: 1995
+2024-09-08 10:45:42,066 - INFO - Clicked dob_year successfully.
+2024-09-08 10:45:43,069 - INFO - Processing field at index 10 (Rank: 11): _id                                  66dd0f01bd6a0335850c3105
+field_name                                          address-1
+field_type                                              input
+locator_type                                               ID
+locator_value                 ContentPlaceHolder1_txtAddress1
+optional                                                False
+rank                                                       11
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 10, dtype: object
+2024-09-08 10:45:43,071 - INFO - Field: address-1, Selector: ContentPlaceHolder1_txtAddress1, Type: input
+2024-09-08 10:45:43,071 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress1
+2024-09-08 10:45:45,073 - ERROR - Error scrolling to element ContentPlaceHolder1_txtAddress1: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtAddress1") to be visible
+
+2024-09-08 10:45:45,074 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress1
+2024-09-08 10:45:45,075 - INFO - Mapped field address-1 to address 1
+2024-09-08 10:45:45,581 - INFO - Element with selector: ContentPlaceHolder1_txtAddress1 found.
+2024-09-08 10:45:46,461 - INFO - Filling field address-1 with data: 1773 Heritage Ln
+2024-09-08 10:45:46,812 - INFO - Clicked address-1 successfully.
+2024-09-08 10:45:47,822 - INFO - Processing field at index 11 (Rank: 12): _id                                  66dd0f01bd6a0335850c3107
+field_name                                          address-2
+field_type                                              input
+locator_type                                               ID
+locator_value                 ContentPlaceHolder1_txtAddress2
+optional                                                False
+rank                                                       12
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 11, dtype: object
+2024-09-08 10:45:47,824 - INFO - Field: address-2, Selector: ContentPlaceHolder1_txtAddress2, Type: input
+2024-09-08 10:45:47,824 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress2
+2024-09-08 10:45:49,834 - ERROR - Error scrolling to element ContentPlaceHolder1_txtAddress2: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtAddress2") to be visible
+
+2024-09-08 10:45:49,836 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress2
+2024-09-08 10:45:49,836 - INFO - Mapped field address-2 to address 2
+2024-09-08 10:45:50,299 - INFO - Element with selector: ContentPlaceHolder1_txtAddress2 found.
+2024-09-08 10:45:51,205 - INFO - Filling field address-2 with data: Apt 2038
+2024-09-08 10:45:51,564 - INFO - Clicked address-2 successfully.
+2024-09-08 10:45:52,567 - INFO - Processing field at index 12 (Rank: 13): _id                                  66dd0f01bd6a0335850c3109
+field_name                                               city
+field_type                                              input
+locator_type                                               ID
+locator_value                     ContentPlaceHolder1_txtCity
+optional                                                False
+rank                                                       13
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 12, dtype: object
+2024-09-08 10:45:52,569 - INFO - Field: city, Selector: ContentPlaceHolder1_txtCity, Type: input
+2024-09-08 10:45:52,569 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtCity
+2024-09-08 10:45:54,580 - ERROR - Error scrolling to element ContentPlaceHolder1_txtCity: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtCity") to be visible
+
+2024-09-08 10:45:54,582 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtCity
+2024-09-08 10:45:54,582 - INFO - Mapped field city to city
+2024-09-08 10:45:55,021 - INFO - Element with selector: ContentPlaceHolder1_txtCity found.
+2024-09-08 10:45:55,956 - INFO - Filling field city with data: Sacramento
+2024-09-08 10:45:56,318 - INFO - Clicked city successfully.
+2024-09-08 10:45:57,331 - INFO - Processing field at index 13 (Rank: 14): _id                                  66dd0f01bd6a0335850c310b
+field_name                                              state
+field_type                                             select
+locator_type                                               ID
+locator_value     ContentPlaceHolder1_ctlStates_DropDownList1
+optional                                                False
+rank                                                       14
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 13, dtype: object
+2024-09-08 10:45:57,332 - INFO - Field: state, Selector: ContentPlaceHolder1_ctlStates_DropDownList1, Type: select
+2024-09-08 10:45:57,333 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlStates_DropDownList1
+2024-09-08 10:45:59,335 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlStates_DropDownList1: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlStates_DropDownList1") to be visible
+
+2024-09-08 10:45:59,336 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlStates_DropDownList1
+2024-09-08 10:45:59,337 - INFO - Mapped field state to state
+2024-09-08 10:45:59,775 - INFO - Element with selector: ContentPlaceHolder1_ctlStates_DropDownList1 found.
+2024-09-08 10:46:00,664 - INFO - Selecting option for state: CA
+2024-09-08 10:46:00,933 - INFO - Clicked state successfully.
+2024-09-08 10:46:01,946 - INFO - Processing field at index 14 (Rank: 15): _id                                  66dd0f01bd6a0335850c310d
+field_name                                                zip
+field_type                                              input
+locator_type                                               ID
+locator_value                      ContentPlaceHolder1_txtZip
+optional                                                False
+rank                                                       15
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 14, dtype: object
+2024-09-08 10:46:01,947 - INFO - Field: zip, Selector: ContentPlaceHolder1_txtZip, Type: input
+2024-09-08 10:46:01,947 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtZip
+2024-09-08 10:46:03,956 - ERROR - Error scrolling to element ContentPlaceHolder1_txtZip: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtZip") to be visible
+
+2024-09-08 10:46:03,957 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtZip
+2024-09-08 10:46:03,958 - INFO - Mapped field zip to zip
+2024-09-08 10:46:04,394 - INFO - Element with selector: ContentPlaceHolder1_txtZip found.
+2024-09-08 10:46:05,281 - INFO - Filling field zip with data: 95815
+2024-09-08 10:46:05,636 - INFO - Clicked zip successfully.
+2024-09-08 10:46:06,646 - INFO - Processing field at index 15 (Rank: 16): _id                                  66dd0f01bd6a0335850c310f
+field_name                                              email
+field_type                                              input
+locator_type                                               ID
+locator_value                    ContentPlaceHolder1_txtEmail
+optional                                                False
+rank                                                       16
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 15, dtype: object
+2024-09-08 10:46:06,648 - INFO - Field: email, Selector: ContentPlaceHolder1_txtEmail, Type: input
+2024-09-08 10:46:06,649 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtEmail
+2024-09-08 10:46:08,660 - ERROR - Error scrolling to element ContentPlaceHolder1_txtEmail: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtEmail") to be visible
+
+2024-09-08 10:46:08,661 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtEmail
+2024-09-08 10:46:08,662 - INFO - Mapped field email to email
+2024-09-08 10:46:09,149 - INFO - Element with selector: ContentPlaceHolder1_txtEmail found.
+2024-09-08 10:46:10,029 - INFO - Filling field email with data: yasin.omar00@hotmail.com
+2024-09-08 10:46:10,419 - INFO - Clicked email successfully.
+2024-09-08 10:46:11,426 - INFO - Processing field at index 16 (Rank: 17): _id                                  66dd0f01bd6a0335850c3111
+field_name                                       final-submit
+field_type                                             button
+locator_type                                               ID
+locator_value                  ContentPlaceHolder1_btnConfirm
+optional                                                False
+rank                                                       17
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 16, dtype: object
+2024-09-08 10:46:11,428 - INFO - Field: final-submit, Selector: ContentPlaceHolder1_btnConfirm, Type: button
+2024-09-08 10:46:11,429 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-08 10:46:13,433 - ERROR - Error scrolling to element ContentPlaceHolder1_btnConfirm: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_btnConfirm") to be visible
+
+2024-09-08 10:46:13,435 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-08 10:46:13,435 - INFO - Mapped field final-submit to final-submit
+2024-09-08 10:46:13,948 - INFO - Element with selector: ContentPlaceHolder1_btnConfirm found.
+2024-09-08 10:46:14,857 - INFO - Submitting form via final-submit button.
+2024-09-08 10:46:16,456 - INFO - Clicked final-submit successfully.
+2024-09-08 10:46:17,469 - INFO - Final submit button clicked for Yasin Omar on FactorTrust. Waiting for 2 seconds before taking screenshot.
+2024-09-08 10:46:20,459 - INFO - Logged successful submission for Yasin Omar on FactorTrust.
+2024-09-08 10:46:20,461 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1726.
+2024-09-08 10:46:20,461 - INFO - Marked submission as completed for Yasin Omar on FactorTrust.
+2024-09-08 10:46:20,461 - INFO - Form submitted successfully for Yasin Omar on FactorTrust.
+2024-09-08 10:46:20,664 - INFO - Upserted submission record with individual_id: 66dd0f01bd6a0335850c30d8, website_id: 66dcd095bd6a0335850c1726
+2024-09-08 10:46:20,664 - INFO - Upserted submission record with individual_id: 66dd0f01bd6a0335850c30d8, website_id: 66dcd095bd6a0335850c1726
+2024-09-08 10:46:20,665 - INFO - Submission record created or updated with ID: 66dde2ecbd6a0335850c899b
+2024-09-08 10:46:20,666 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1726.
+2024-09-08 10:46:20,666 - INFO - Moving to the next website for Yasin Omar.
+2024-09-08 10:46:20,666 - INFO - Submission successful for Yasin Omar on FactorTrust. Moving to the next website.
+2024-09-08 10:46:20,673 - INFO - Cleaned form_data:                         _id  ...     website_name
+0  66dd0f01bd6a0335850c3115  ...  AMEX Prequalify
+1  66dd0f01bd6a0335850c3117  ...  AMEX Prequalify
+2  66dd0f01bd6a0335850c3119  ...  AMEX Prequalify
+3  66dd0f01bd6a0335850c311b  ...  AMEX Prequalify
+4  66dd0f01bd6a0335850c311d  ...  AMEX Prequalify
+5  66dd0f01bd6a0335850c311f  ...  AMEX Prequalify
+6  66dd0f01bd6a0335850c3121  ...  AMEX Prequalify
+7  66dd0f01bd6a0335850c3123  ...  AMEX Prequalify
+8  66dd0f01bd6a0335850c3125  ...  AMEX Prequalify
+9  66dd0f01bd6a0335850c3127  ...  AMEX Prequalify
+
+[10 rows x 9 columns]
+2024-09-08 10:46:20,674 - INFO - Form data loaded successfully for AMEX Prequalify.
+2024-09-08 10:46:20,679 - INFO - Locators data for AMEX Prequalify: 
+                        _id  ...     website_name
+0  66dd0f01bd6a0335850c3115  ...  AMEX Prequalify
+1  66dd0f01bd6a0335850c3117  ...  AMEX Prequalify
+2  66dd0f01bd6a0335850c3119  ...  AMEX Prequalify
+3  66dd0f01bd6a0335850c311b  ...  AMEX Prequalify
+4  66dd0f01bd6a0335850c311d  ...  AMEX Prequalify
+5  66dd0f01bd6a0335850c311f  ...  AMEX Prequalify
+6  66dd0f01bd6a0335850c3121  ...  AMEX Prequalify
+7  66dd0f01bd6a0335850c3123  ...  AMEX Prequalify
+8  66dd0f01bd6a0335850c3125  ...  AMEX Prequalify
+9  66dd0f01bd6a0335850c3127  ...  AMEX Prequalify
+
+[10 rows x 9 columns]
+2024-09-08 10:46:20,680 - INFO - Attempting to create a new page for Yasin Omar on AMEX Prequalify.
+2024-09-08 10:46:21,307 - INFO - Navigating to URL: https://card.americanexpress.com/d/pre-qualified-offers/ for AMEX Prequalify.
+2024-09-08 10:46:23,886 - INFO - Page loaded successfully for AMEX Prequalify with status 200.
+2024-09-08 10:46:23,888 - INFO - Processing field at index 0 (Rank: 18): _id                                       66dd0f01bd6a0335850c3115
+field_name                                              first-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                            firstName
+optional                                                     False
+rank                                                            18
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 0, dtype: object
+2024-09-08 10:46:23,890 - INFO - Field: first-name, Selector: firstName, Type: input
+2024-09-08 10:46:23,890 - INFO - Waiting for element with selector: firstName
+2024-09-08 10:46:25,892 - ERROR - Error scrolling to element firstName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("firstName") to be visible
+
+2024-09-08 10:46:25,893 - INFO - Waiting for element with selector: firstName
+2024-09-08 10:46:25,893 - INFO - Mapped field first-name to first name
+2024-09-08 10:46:26,377 - INFO - Element with selector: firstName found.
+2024-09-08 10:46:27,351 - INFO - Filling field first-name with data: Yasin
+2024-09-08 10:46:27,720 - INFO - Clicked first-name successfully.
+2024-09-08 10:46:28,725 - INFO - Processing field at index 1 (Rank: 19): _id                                       66dd0f01bd6a0335850c3117
+field_name                                               last-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                             lastName
+optional                                                     False
+rank                                                            19
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 1, dtype: object
+2024-09-08 10:46:28,725 - INFO - Field: last-name, Selector: lastName, Type: input
+2024-09-08 10:46:28,726 - INFO - Waiting for element with selector: lastName
+2024-09-08 10:46:30,733 - ERROR - Error scrolling to element lastName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("lastName") to be visible
+
+2024-09-08 10:46:30,734 - INFO - Waiting for element with selector: lastName
+2024-09-08 10:46:30,735 - INFO - Mapped field last-name to last name
+2024-09-08 10:46:31,211 - INFO - Element with selector: lastName found.
+2024-09-08 10:46:32,109 - INFO - Filling field last-name with data: Omar
+2024-09-08 10:46:32,461 - INFO - Clicked last-name successfully.
+2024-09-08 10:46:33,478 - INFO - Processing field at index 2 (Rank: 20): _id                                       66dd0f01bd6a0335850c3119
+field_name                                               address-1
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                             address1
+optional                                                     False
+rank                                                            20
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 2, dtype: object
+2024-09-08 10:46:33,480 - INFO - Field: address-1, Selector: address1, Type: input
+2024-09-08 10:46:33,480 - INFO - Waiting for element with selector: address1
+2024-09-08 10:46:35,483 - ERROR - Error scrolling to element address1: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("address1") to be visible
+
+2024-09-08 10:46:35,485 - INFO - Waiting for element with selector: address1
+2024-09-08 10:46:35,485 - INFO - Mapped field address-1 to address 1
+2024-09-08 10:46:35,956 - INFO - Element with selector: address1 found.
+2024-09-08 10:46:36,847 - INFO - Filling field address-1 with data: 1773 Heritage Ln
+2024-09-08 10:46:37,201 - INFO - Clicked address-1 successfully.
+2024-09-08 10:46:38,204 - INFO - Processing field at index 3 (Rank: 21): _id                                       66dd0f01bd6a0335850c311b
+field_name                                               address-2
+field_type                                                   input
+locator_type                                          CSS_SELECTOR
+locator_value    div.-mx-16:nth-child(3) > div:nth-child(2) > i...
+optional                                                      True
+rank                                                            21
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 3, dtype: object
+2024-09-08 10:46:38,206 - INFO - Field: address-2, Selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), Type: input
+2024-09-08 10:46:38,206 - INFO - Waiting for element with selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-08 10:46:38,678 - INFO - Scrolling to element with selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-08 10:46:40,796 - INFO - Scrolled to element: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-08 10:46:40,796 - INFO - Waiting for element with selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-08 10:46:40,797 - INFO - Mapped field address-2 to address 2
+2024-09-08 10:46:42,803 - ERROR - Error locating or clicking field (Selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), Field: address-2): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), button#div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), btn#div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), input[name*='Confirm'], input[type='submit']") to be visible
+
+2024-09-08 10:46:42,805 - ERROR - Error processing field at index 3: Failed to locate field with selector 'div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)' for Yasin Omar on AMEX Prequalify
+2024-09-08 10:46:42,805 - ERROR - Error in form filling for Yasin Omar on AMEX Prequalify: Failed to locate field with selector 'div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)' for Yasin Omar on AMEX Prequalify
+2024-09-08 10:46:42,808 - INFO - Logged successful submission for Yasin Omar on AMEX Prequalify.
+2024-09-08 10:46:42,810 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1728.
+2024-09-08 10:46:42,810 - INFO - Marked submission as completed for Yasin Omar on AMEX Prequalify.
+2024-09-08 10:46:42,810 - CRITICAL - Fatal error occurred while submitting form for Yasin Omar on AMEX Prequalify (https://card.americanexpress.com/d/pre-qualified-offers/): Failed to locate field with selector 'div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)' for Yasin Omar on AMEX Prequalify
+2024-09-08 10:46:43,536 - INFO - Screenshot captured for Yasin Omar on AMEX Prequalify. Saved to screenshot_error_AMEX Prequalify_Yasin Omar.png
+2024-09-08 10:46:43,763 - ERROR - Failed to complete the submission for Yasin Omar on AMEX Prequalify.
+2024-09-08 10:46:43,763 - ERROR - Error submitting form for Yasin Omar on AMEX Prequalify: Stopping processing due to fatal error on AMEX Prequalify: Failed to locate field with selector 'div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)' for Yasin Omar on AMEX Prequalify
+2024-09-08 10:46:48,770 - INFO - Attempting to create a new page for Yasin Omar on AMEX Prequalify.
+2024-09-08 10:46:49,427 - INFO - Navigating to URL: https://card.americanexpress.com/d/pre-qualified-offers/ for AMEX Prequalify.
+2024-09-08 10:46:52,927 - INFO - Page loaded successfully for AMEX Prequalify with status 200.
+2024-09-08 10:46:52,929 - INFO - Processing field at index 0 (Rank: 18): _id                                       66dd0f01bd6a0335850c3115
+field_name                                              first-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                            firstName
+optional                                                     False
+rank                                                            18
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 0, dtype: object
+2024-09-08 10:46:52,929 - INFO - Field: first-name, Selector: firstName, Type: input
+2024-09-08 10:46:52,930 - INFO - Waiting for element with selector: firstName
+2024-09-08 10:46:54,942 - ERROR - Error scrolling to element firstName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("firstName") to be visible
+
+2024-09-08 10:46:54,942 - INFO - Waiting for element with selector: firstName
+2024-09-08 10:46:54,942 - INFO - Mapped field first-name to first name
+2024-09-08 10:46:55,666 - INFO - Element with selector: firstName found.
+2024-09-08 10:46:56,787 - INFO - Filling field first-name with data: Yasin
+2024-09-08 10:46:57,200 - INFO - Clicked first-name successfully.
+2024-09-08 10:46:58,206 - INFO - Processing field at index 1 (Rank: 19): _id                                       66dd0f01bd6a0335850c3117
+field_name                                               last-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                             lastName
+optional                                                     False
+rank                                                            19
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 1, dtype: object
+2024-09-08 10:46:58,208 - INFO - Field: last-name, Selector: lastName, Type: input
+2024-09-08 10:46:58,208 - INFO - Waiting for element with selector: lastName
