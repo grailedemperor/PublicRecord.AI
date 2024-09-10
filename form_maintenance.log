@@ -10317,3 +10317,55 @@ website_name                                       AMEX Prequalify
 Name: 1, dtype: object
 2024-09-08 10:46:58,208 - INFO - Field: last-name, Selector: lastName, Type: input
 2024-09-08 10:46:58,208 - INFO - Waiting for element with selector: lastName
+2024-09-10 09:36:02,714 - INFO - Setting up the database connection...
+2024-09-10 09:36:02,731 - INFO - Database connection established.
+2024-09-10 09:36:03,303 - INFO - Setting up the Scraping Browser...
+2024-09-10 09:36:03,303 - INFO - Connecting to Scraping Browser...
+2024-09-10 09:36:03,675 - ERROR - Error setting up browser: BrowserType.connect_over_cdp: WebSocket error: wss://None@brd.superproxy.io:9222/ 407 Auth Failed (zone_not_found)
+Zone not found
+Call log:
+<ws connecting> wss://None@brd.superproxy.io:9222/
+  - <ws unexpected response> wss://None@brd.superproxy.io:9222/ 407 Auth Failed (zone_not_found)
+Zone not found
+  - <ws error> wss://None@brd.superproxy.io:9222/ error WebSocket was closed before the connection was established
+  - <ws connect error> wss://None@brd.superproxy.io:9222/ WebSocket was closed before the connection was established
+  - <ws disconnected> wss://None@brd.superproxy.io:9222/ code=1006 reason=
+
+2024-09-10 09:36:03,681 - ERROR - An unexpected error occurred: BrowserType.connect_over_cdp: WebSocket error: wss://None@brd.superproxy.io:9222/ 407 Auth Failed (zone_not_found)
+Zone not found
+Call log:
+<ws connecting> wss://None@brd.superproxy.io:9222/
+  - <ws unexpected response> wss://None@brd.superproxy.io:9222/ 407 Auth Failed (zone_not_found)
+Zone not found
+  - <ws error> wss://None@brd.superproxy.io:9222/ error WebSocket was closed before the connection was established
+  - <ws connect error> wss://None@brd.superproxy.io:9222/ WebSocket was closed before the connection was established
+  - <ws disconnected> wss://None@brd.superproxy.io:9222/ code=1006 reason=
+Traceback (most recent call last):
+  File "/Users/eleven23/Desktop/Enhance-Public-Record-Bot/PublicRecord.AI/main.py", line 61, in main
+    browser = await setup_browser(pw)  # Pass pw to setup_browser
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/eleven23/Desktop/Enhance-Public-Record-Bot/PublicRecord.AI/main.py", line 30, in setup_browser
+    browser = await pw.chromium.connect_over_cdp(sbr_ws_cdp)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 14492, in connect_over_cdp
+    await self._impl_obj.connect_over_cdp(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 174, in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 64, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.connect_over_cdp: WebSocket error: wss://None@brd.superproxy.io:9222/ 407 Auth Failed (zone_not_found)
+Zone not found
+Call log:
+<ws connecting> wss://None@brd.superproxy.io:9222/
+  - <ws unexpected response> wss://None@brd.superproxy.io:9222/ 407 Auth Failed (zone_not_found)
+Zone not found
+  - <ws error> wss://None@brd.superproxy.io:9222/ error WebSocket was closed before the connection was established
+  - <ws connect error> wss://None@brd.superproxy.io:9222/ WebSocket was closed before the connection was established
+  - <ws disconnected> wss://None@brd.superproxy.io:9222/ code=1006 reason=
+
+2024-09-10 09:36:03,682 - INFO - Closing the database connection...
+2024-09-10 09:36:03,683 - INFO - Database connection closed.
