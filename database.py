@@ -221,12 +221,23 @@ def upsert_submission_record(db, individual_id, website_id):
         raise
 
 
-
 def check_submission_status(db, individual_id, website_id):
     try:
+        # Access the 'submissions' collection
         submissions_collection = db['submissions']
+        
+        # Find the submission record by individual and website
         submission = submissions_collection.find_one({"individual_id": individual_id, "website_id": website_id})
-        return submission and submission.get('is_submitted', False)
+
+        # Log whether a submission was found and its status
+        if submission:
+            is_submitted = submission.get('is_submitted', False)
+            logging.info(f"Submission found for individual {individual_id} and website {website_id}. is_submitted: {is_submitted}")
+            return is_submitted
+        else:
+            logging.info(f"No submission found for individual {individual_id} and website {website_id}.")
+            return False
+
     except Exception as e:
         logging.error(f"Error checking submission status: {e}")
         raise

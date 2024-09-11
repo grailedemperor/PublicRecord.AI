@@ -81,37 +81,49 @@ def get_best_match(field_name, individual_data_keys):
 def convert_objectid(data):
     if isinstance(data, dict):
         for key, value in data.items():
-            if isinstance(value, ObjectId):
-                data[key] = str(value)
-            elif isinstance(value, dict):
+            if isinstance(value, ObjectId):  # Check if the value is an ObjectId
+                data[key] = str(value)  # Convert ObjectId to string
+            elif isinstance(value, dict):  # Recursively handle dictionaries
                 convert_objectid(value)
-            elif isinstance(value, list):
+            elif isinstance(value, list):  # Recursively handle lists
                 for item in value:
                     convert_objectid(item)
     elif isinstance(data, list):
-        for item in data:
-            convert_objectid(item)
+        for i in range(len(data)):
+            if isinstance(data[i], ObjectId):  # Check if list element is an ObjectId
+                data[i] = str(data[i])  # Convert ObjectId to string
+            elif isinstance(data[i], dict) or isinstance(data[i], list):  # Recursively handle nested structures
+                convert_objectid(data[i])
 
 SUCCESSFUL_SUBMISSION_DIR = 'successful_submission'
 if not os.path.exists(SUCCESSFUL_SUBMISSION_DIR):
     os.makedirs(SUCCESSFUL_SUBMISSION_DIR)
 
-def log_successful_submission(individual_name, website_name, submission_data, individual_data, url):
-    convert_objectid(individual_data)
+def log_successful_submission(individual_name, website_name, submission_data, url):
+    # Convert form_data (Pandas DataFrame) to a list of dictionaries
+    if isinstance(submission_data, pd.DataFrame):
+        submission_data = submission_data.to_dict(orient='records')  # Convert DataFrame to list of dicts
+
+    #convert_objectid(individual_data)
+    convert_objectid(submission_data)
+
+    # Debugging: Log data after ObjectId conversion
+    logging.info(f"Submission data after ObjectId conversion: {submission_data}")
+    #logging.info(f"Individual data after ObjectId conversion: {individual_data}")
 
     # Ensure submission_data and individual_data are JSON serializable
     def ensure_json_serializable(data):
-        json_serializable_data = {}
-        for key, value in data.items():
-            if isinstance(value, pd.DataFrame):  # If it's a DataFrame, convert to dict
-                json_serializable_data[key] = value.to_dict()
-            elif isinstance(value, (list, dict, str, int, float, bool)) or value is None:
-                json_serializable_data[key] = value  # Already JSON serializable
-            else:
-                json_serializable_data[key] = str(value)  # Convert non-serializable types to string
-        return json_serializable_data
+        if isinstance(data, pd.DataFrame):  # Convert DataFrame to a list of dictionaries
+            return data.to_dict(orient='records')
+        elif isinstance(data, pd.Series):  # Convert Series to a list
+            return data.tolist()
+        elif isinstance(data, dict):
+            return {k: ensure_json_serializable(v) for k, v in data.items()}  # Recursively handle dicts
+        elif isinstance(data, list):
+            return [ensure_json_serializable(i) for i in data]  # Recursively handle lists
+        return data  # If it's already a simple data type, return it as is
 
-    submission_data_clean = ensure_json_serializable(individual_data)
+    submission_data_clean = ensure_json_serializable(submission_data)
     
     log_data = {
         "individual_name": individual_name,
@@ -141,9 +153,8 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
         
         logging.info(f"Mapped field {field_name} to {actual_data_key}")
 
-        # Updated selector to dynamically locate the element
         if field_type == 'input':
-            element = await page.wait_for_selector(f"input#{selector}, button#{selector}, btn#{selector}, input[name*='Confirm'], input[type='submit']", timeout=2000)
+            element = await page.wait_for_selector(f"input#{selector}, input[name*='Confirm'], input[type='submit']", timeout=2000)
         elif field_name in ['submit', 'final-submit'] or field_type == 'button':
             element = await page.wait_for_selector(f"input[type='submit']#{selector}, button#{selector}, input[value='Submit']", timeout=2000)
         elif field_type == 'select':
@@ -159,8 +170,6 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
         if element:
             logging.info(f"Element with selector: {selector} found.")
             await element.hover()
-            #logging.info(f"Individual data: {individual_data}")
-            #logging.info(f"Available keys in individual_data: {individual_data.keys()}")
 
             # Handle input fields where data needs to be filled
             if field_type == 'input':
@@ -168,29 +177,31 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
                     filled_value = individual_data[actual_data_key]
                     logging.info(f"Filling field {field_name} with data: {filled_value}")
                     await element.fill(filled_value)  # Fill the input with data
-                    submission_data[field_name] = filled_value  # Log the filled value
-                else:
-                    logging.warning(f"No data found or incorrect data type for field: {field_name}")
+                    submission_data[actual_data_key] = filled_value  # Log the **actual value** filled
 
             # Handle radio buttons
             elif field_type == 'radio' and not await element.is_checked():
                 logging.info(f"Radio button {field_name} is not checked. Checking it now.")
                 await element.click()
+                submission_data[actual_data_key] = "checked"  # Log the radio button as "checked"
 
             # Handle buttons (like submit)
             elif field_type in ['submit', 'button']:
-                logging.info(f"Submitting form via {field_name} button.")
+                logging.info(f"Clicking submit button {field_name}.")
                 await element.click()
+                submission_data[actual_data_key] = "clicked"  # Log that the button was clicked
 
             # Handle checkboxes
             elif field_type == 'checkbox':
                 logging.info(f"Checking checkbox {field_name}.")
                 await element.click()
+                submission_data[actual_data_key] = "checked"  # Log that the checkbox was checked
 
             # Handle dropdowns
             elif field_type == 'select' and actual_data_key in individual_data:
                 logging.info(f"Selecting option for {field_name}: {individual_data[actual_data_key]}")
                 await element.select_option(individual_data[actual_data_key])
+                submission_data[actual_data_key] = individual_data[actual_data_key]  # Log the selected option
 
             logging.info(f"Clicked {field_name} successfully.")
             return element
@@ -210,6 +221,7 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
 
             if js_click_result:
                 logging.info(f"JavaScript click for {field_name} was successful.")
+                submission_data[actual_data_key] = "clicked"  # Log that the JS click was successful
                 return True
             else:
                 raise RuntimeError(f"JavaScript fallback failed to interact with {field_name} using selector '{selector}'")
@@ -298,7 +310,7 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
                 final_submit_found = True
 
             try:
-                logging.info(f"Field: {field_name}, Selector: {selector}, Type: {field_type}")
+                #logging.info(f"Field: {field_name}, Selector: {selector}, Type: {field_type}")
 
                 # Scroll to the element before interacting
                 await scroll_to_element(page, selector)
@@ -306,10 +318,15 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
                 # Locate and click/handle the field by selector, not field_name
                 element = await identify_and_click_field(page, selector, field_name, field_type, individual_data, submission_data)
 
-                if element:
-                    submission_data[field_name] = field_type  # Log the processed field
+                # Instead of logging the field_type, log the actual value from individual_data
+                actual_data_key = FIELD_MAPPING.get(field_name.lower(), field_name.lower())
+                
+                # If there's a corresponding key in individual_data, save the actual value
+                if actual_data_key in individual_data:
+                    submission_data[actual_data_key] = individual_data[actual_data_key]
+                    logging.info(f"Logged {actual_data_key}: {individual_data[actual_data_key]} in submission_data")
                 else:
-                    raise RuntimeError(f"Failed to locate field with selector '{selector}' for {individual_name} on {website_name}")
+                    logging.warning(f"No data found for {field_name} in individual_data.")
 
                 # Add a small delay after each interaction
                 await asyncio.sleep(1)
@@ -335,11 +352,12 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
         raise
 
     finally:
-        # Log the form submission data after all fields are filled
-        log_successful_submission(individual_name, website_name, form_data, submission_data, form_data["url"].iloc[0])
-        # After successful submission, update the database record to mark this submission as complete
-        update_submission_status(connection, individual_data['_id'], website_id)
-        logging.info(f"Marked submission as completed for {individual_name} on {website_name}.")
+        if final_submit_found:
+            # Log the form submission data after all fields are filled
+            log_successful_submission(individual_name, website_name, submission_data, form_data["url"].iloc[0])
+            # After successful submission, update the database record to mark this submission as complete
+            update_submission_status(connection, individual_data['_id'], website_id)
+            logging.info(f"Marked submission as completed for {individual_name} on {website_name}.")
 
 
 async def handle_captcha(page, individual_name, website_name, connection):
@@ -483,40 +501,42 @@ async def fill_and_submit_form(browser, url, individual_data, form_data, field_l
 
 
 # Sequentially process websites and stop on the first fatal error but keep the browser open
-async def process_websites_async(websites, connection, model, vectorizer, browser):
+async def process_websites_async(websites, db, model, vectorizer, browser):
     try:
-        individual_data_list = load_individual_data(connection)
+        individual_data_list = load_individual_data(db)
 
-        # Filter websites based on submission status before processing individuals
+        # Loop through each individual
         for individual_data in individual_data_list:
             individual_name = f"{individual_data.get('first name', 'Unknown')} {individual_data.get('last name', 'Unknown')}"
-            logging.info(f"Starting submission process for individual: {individual_name}")
+            logging.info(f"Starting submission process for individual: {individual_name} (ID: {individual_data['_id']})")
 
-            # Filter out websites that have already been completed for this individual
+            # Filter out websites where submission is already completed for this individual
             websites_to_process = [
                 website for website in websites
-                if not check_submission_status(connection, individual_data['_id'], website['_id'])
+                if not check_submission_status(db, individual_data['_id'], website['_id'])
             ]
 
             if not websites_to_process:
-                logging.info(f"All submissions for {individual_name} are already completed. Moving to the next individual.")
+                logging.info(f"All submissions for {individual_name} are already completed. Skipping to the next individual.")
                 continue
 
-            # Process each remaining website sequentially for the current individual
+            # Loop through remaining websites for this individual
             for website in websites_to_process:
                 website_id = website['_id']
                 url = website['url']
                 category = website['category']
                 website_name = website['name']
 
-                form_data = load_form_data(connection, website_name)
-                field_locators = load_field_locators(connection, website_name)
+                logging.info(f"Processing submission for {individual_name} on {website_name} (Website ID: {website_id})")
+
+                form_data = load_form_data(db, website_name)
+                field_locators = load_field_locators(db, website_name)
 
                 retry_count = 0
                 while retry_count < RETRY_COUNT:
                     try:
                         # Submit the form for the current website
-                        await fill_and_submit_form(browser, url, individual_data, form_data, field_locators, connection, website_id, category)
+                        await fill_and_submit_form(browser, url, individual_data, form_data, field_locators, db, website_id, category)
 
                         # If submission was successful, break out of retry loop
                         logging.info(f"Submission successful for {individual_name} on {website_name}. Moving to the next website.")
@@ -532,21 +552,21 @@ async def process_websites_async(websites, connection, model, vectorizer, browse
                         # Delay before retrying
                         await asyncio.sleep(RETRY_DELAY)
 
-            # After all websites for the individual are processed
+            # Log completion for the individual
             logging.info(f"All websites processed for {individual_name}. Moving to the next individual.")
 
         # After processing all individuals and their websites
         remaining_tasks = any(
-            not check_submission_status(connection, individual['_id'], website['_id'])
+            not check_submission_status(db, individual['_id'], website['_id'])
             for individual in individual_data_list
             for website in websites
         )
 
         if not remaining_tasks:
-            logging.info("No remaining tasks. Closing browser.")
+            logging.info("All tasks are complete. Closing the browser.")
             await close_browser(browser)
         else:
-            logging.info("Some tasks remain. Keeping browser open.")
+            logging.info("Some tasks remain. Keeping the browser open for additional processing.")
 
     except Exception as e:
         logging.error(f"An error occurred while processing websites: {str(e)}", exc_info=True)

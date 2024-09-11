@@ -3,14 +3,14 @@
     "website_name": "AMEX Prequalify",
     "url": "https://card.americanexpress.com/d/pre-qualified-offers/",
     "submitted_data": {
-        "_id": "0    66dd0f01bd6a0335850c3115\n1    66dd0f01bd6a0335850c3117\n2    66dd0f01bd6a0335850c3119\n3    66dd0f01bd6a0335850c311b\n4    66dd0f01bd6a0335850c311d\n5    66dd0f01bd6a0335850c311f\n6    66dd0f01bd6a0335850c3121\n7    66dd0f01bd6a0335850c3123\n8    66dd0f01bd6a0335850c3125\n9    66dd0f01bd6a0335850c3127\nName: _id, dtype: object",
-        "field_name": "0      first-name\n1       last-name\n2       address-1\n3       address-2\n4            city\n5           state\n6             zip\n7       ssn_part3\n8          income\n9    final-submit\nName: field_name, dtype: object",
-        "field_type": "0     input\n1     input\n2     input\n3     input\n4     input\n5    select\n6     input\n7     input\n8     input\n9    button\nName: field_type, dtype: object",
-        "locator_type": "0              ID\n1              ID\n2              ID\n3    CSS_SELECTOR\n4              ID\n5           XPATH\n6              ID\n7              ID\n8              ID\n9    CSS_SELECTOR\nName: locator_type, dtype: object",
-        "locator_value": "0                                            firstName\n1                                             lastName\n2                                             address1\n3    div.-mx-16:nth-child(3) > div:nth-child(2) > i...\n4                                                 city\n5    /html/body/div/div/main/div/section/div/div/di...\n6                                              zipCode\n7                                                  ssn\n8                                               income\n9                             button.styles_btn__RsfY1\nName: locator_value, dtype: object",
-        "optional": "0    False\n1    False\n2    False\n3     True\n4    False\n5    False\n6    False\n7    False\n8    False\n9    False\nName: optional, dtype: bool",
-        "rank": "0    18\n1    19\n2    20\n3    21\n4    22\n5    23\n6    24\n7    25\n8    26\n9    27\nName: rank, dtype: int64",
-        "url": "0    https://card.americanexpress.com/d/pre-qualifi...\n1    https://card.americanexpress.com/d/pre-qualifi...\n2    https://card.americanexpress.com/d/pre-qualifi...\n3    https://card.americanexpress.com/d/pre-qualifi...\n4    https://card.americanexpress.com/d/pre-qualifi...\n5    https://card.americanexpress.com/d/pre-qualifi...\n6    https://card.americanexpress.com/d/pre-qualifi...\n7    https://card.americanexpress.com/d/pre-qualifi...\n8    https://card.americanexpress.com/d/pre-qualifi...\n9    https://card.americanexpress.com/d/pre-qualifi...\nName: url, dtype: object",
-        "website_name": "0    AMEX Prequalify\n1    AMEX Prequalify\n2    AMEX Prequalify\n3    AMEX Prequalify\n4    AMEX Prequalify\n5    AMEX Prequalify\n6    AMEX Prequalify\n7    AMEX Prequalify\n8    AMEX Prequalify\n9    AMEX Prequalify\nName: website_name, dtype: object"
+        "first name": "Yasin",
+        "last name": "Omar",
+        "address 1": "1773 Heritage Ln",
+        "address 2": "Apt 2038",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95815",
+        "ssn_part3": "5096",
+        "income": 95000
     }
 }
