@@ -100,6 +100,8 @@ if not os.path.exists(SUCCESSFUL_SUBMISSION_DIR):
     os.makedirs(SUCCESSFUL_SUBMISSION_DIR)
 
 def log_successful_submission(individual_name, website_name, submission_data, url):
+    if 'final-submit' not in submission_data or submission_data['final-submit'] != 'clicked':
+        raise RuntimeError(f"Submission for {individual_name} on {website_name} did not complete properly.")
     # Convert form_data (Pandas DataFrame) to a list of dictionaries
     if isinstance(submission_data, pd.DataFrame):
         submission_data = submission_data.to_dict(orient='records')  # Convert DataFrame to list of dicts
@@ -306,8 +308,8 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
             field_type = row.get('field_type')
             logging.info(f"Processing field at index {index} (Rank: {row.get('rank', 'N/A')}): {row}")
 
-            if field_name == 'final-submit':
-                final_submit_found = True
+            #if field_name == 'final-submit':
+              #  final_submit_found = True
 
             try:
                 #logging.info(f"Field: {field_name}, Selector: {selector}, Type: {field_type}")
@@ -331,8 +333,8 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
                 # Add a small delay after each interaction
                 await asyncio.sleep(1)
 
-                # If this is the final submit button, take a screenshot after submission
-                if field_name == 'final-submit' and final_submit_found:
+                # If the final-submit button was successfully clicked, take a screenshot after submission
+                if 'final-submit' in submission_data and submission_data['final-submit'] == 'clicked':
                     logging.info(f"Final submit button clicked for {individual_name} on {website_name}. Waiting for 2 seconds before taking screenshot.")
                     await asyncio.sleep(2)  # Wait for 2 seconds before taking the screenshot
                     screenshot_path = f"successful_submission/confirmation_screenshot_{website_name}_{individual_name}.png"

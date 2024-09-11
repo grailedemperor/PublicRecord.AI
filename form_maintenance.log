@@ -18288,3 +18288,1216 @@ waiting for locator("input#FIRST_NAME, input[name*='Confirm'], input[type='submi
   -   locator resolved to hidden <input type="text" id="FIRST_NAME" autocorrect="off" name="FIRST_NAME" cardfieldtracker="" aria-invalid="true" aria-required="true" data-initial-value="" autocomplete="given-name" trackingname="legal first name" _ngcontent-web-shell-c4021581336="" aria-describedby="FIRST_NAME_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
 
 2024-09-10 17:29:45,096 - INFO - Logged first name: Yasin in submission_data
+2024-09-11 12:49:43,122 - INFO - Setting up the database connection...
+2024-09-11 12:49:43,233 - INFO - Database connection established.
+2024-09-11 12:49:59,954 - INFO - Setting up the Scraping Browser...
+2024-09-11 12:49:59,955 - INFO - Connecting to Scraping Browser...
+2024-09-11 12:50:01,011 - INFO - Connected to Scraping Browser
+2024-09-11 12:50:01,013 - INFO - Browser set up successfully.
+2024-09-11 12:50:01,014 - INFO - Loading websites from the database...
+2024-09-11 12:50:01,148 - INFO - Websites loaded: [{'_id': ObjectId('66dcd095bd6a0335850c1726'), 'url': 'https://factortrust.com/consumer/optout.aspx', 'category': 'multi-step', 'name': 'FactorTrust'}, {'_id': ObjectId('66dcd095bd6a0335850c1728'), 'url': 'https://card.americanexpress.com/d/pre-qualified-offers/', 'category': 'single-step', 'name': 'AMEX Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c172a'), 'url': 'https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav', 'category': 'multi-step', 'name': 'Capital One Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c172c'), 'url': 'https://www.aa.com/loyalty/enrollment/enroll?v_locale=en_US&v_mobileUAFlag=AA', 'category': 'single-step', 'name': 'American Airlines AAdvantage Enrollment'}, {'_id': ObjectId('66dcd095bd6a0335850c172e'), 'url': 'https://www.usalliance.org/pre-qualification', 'category': 'multi-step', 'name': 'US Alliance Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c1730'), 'url': 'https://www.optoutprescreen.com', 'category': 'multi-step-captcha', 'name': 'OptOutPreScreen'}, {'_id': ObjectId('66dcd095bd6a0335850c1732'), 'url': 'https://rewards.exxon.com/welcome/enrollment?ctid=e_emrp_3stepbn_text', 'category': 'single-step', 'name': 'ExxonRewards'}, {'_id': ObjectId('66dcd095bd6a0335850c1734'), 'url': 'https://forms.sagestreamllc.com/#/opt-self', 'category': 'captcha', 'name': 'SageStream'}, {'_id': ObjectId('66dcd095bd6a0335850c1736'), 'url': 'https://www.creditonebank.com/pre-qualification/data-entry/index', 'category': 'single-step', 'name': 'Credit One Prequalify'}, {'_id': ObjectId('66dcd095bd6a0335850c1738'), 'url': 'https://www.ihg.com/rewardsclub/us/en/enrollment/join?scmisc=OSMAM-6C-US-EN-IHGRCMainPage-JoinCTA', 'category': 'single-step', 'name': 'IHG Rewards'}, {'_id': ObjectId('66dcd095bd6a0335850c173a'), 'url': 'https://www.fuelrewards.com/fuelrewards/signup.html', 'category': 'multi-step-captcha', 'name': 'Fuel Rewards'}]
+2024-09-11 12:50:01,153 - INFO - Training the field matching model...
+2024-09-11 12:50:01,180 - INFO - Model training completed.
+2024-09-11 12:50:01,181 - INFO - Starting to process websites asynchronously...
+2024-09-11 12:50:01,195 - INFO - Starting submission process for individual: Yasin Omar (ID: 66dd0f01bd6a0335850c30d8)
+2024-09-11 12:50:01,212 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1726.
+2024-09-11 12:50:01,214 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1728.
+2024-09-11 12:50:01,217 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c172a.
+2024-09-11 12:50:01,219 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c172c.
+2024-09-11 12:50:01,222 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c172e.
+2024-09-11 12:50:01,225 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1730.
+2024-09-11 12:50:01,227 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1732.
+2024-09-11 12:50:01,229 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1734.
+2024-09-11 12:50:01,231 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1736.
+2024-09-11 12:50:01,233 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c1738.
+2024-09-11 12:50:01,236 - INFO - No submission found for individual 66dd0f01bd6a0335850c30d8 and website 66dcd095bd6a0335850c173a.
+2024-09-11 12:50:01,237 - INFO - Processing submission for Yasin Omar on FactorTrust (Website ID: 66dcd095bd6a0335850c1726)
+2024-09-11 12:50:01,302 - INFO - Cleaned form_data:                          _id    field_name field_type locator_type                                locator_value  optional  rank                                           url website_name
+0   66dd0f01bd6a0335850c30f1        opt-in      radio           ID                ContentPlaceHolder1_rbtnOptIn     False     1  https://factortrust.com/consumer/optout.aspx  FactorTrust
+1   66dd0f01bd6a0335850c30f3        submit     button           ID               ContentPlaceHolder1_btnConfirm     False     2  https://factortrust.com/consumer/optout.aspx  FactorTrust
+2   66dd0f01bd6a0335850c30f5    first-name      input           ID             ContentPlaceHolder1_txtFirstName     False     3  https://factortrust.com/consumer/optout.aspx  FactorTrust
+3   66dd0f01bd6a0335850c30f7     last-name      input           ID              ContentPlaceHolder1_txtLastName     False     4  https://factortrust.com/consumer/optout.aspx  FactorTrust
+4   66dd0f01bd6a0335850c30f9     ssn_part1      input           ID          ContentPlaceHolder1_ctlSsn_txtThree     False     5  https://factortrust.com/consumer/optout.aspx  FactorTrust
+5   66dd0f01bd6a0335850c30fb     ssn_part2      input           ID            ContentPlaceHolder1_ctlSsn_txtTwo     False     6  https://factortrust.com/consumer/optout.aspx  FactorTrust
+6   66dd0f01bd6a0335850c30fd     ssn_part3      input           ID           ContentPlaceHolder1_ctlSsn_txtFour     False     7  https://factortrust.com/consumer/optout.aspx  FactorTrust
+7   66dd0f01bd6a0335850c30ff     dob_month     select           ID          ContentPlaceHolder1_ctlDob_lstMonth     False     8  https://factortrust.com/consumer/optout.aspx  FactorTrust
+8   66dd0f01bd6a0335850c3101       dob_day     select           ID            ContentPlaceHolder1_ctlDob_lstDay     False     9  https://factortrust.com/consumer/optout.aspx  FactorTrust
+9   66dd0f01bd6a0335850c3103      dob_year      input           ID           ContentPlaceHolder1_ctlDob_txtYear     False    10  https://factortrust.com/consumer/optout.aspx  FactorTrust
+10  66dd0f01bd6a0335850c3105     address-1      input           ID              ContentPlaceHolder1_txtAddress1     False    11  https://factortrust.com/consumer/optout.aspx  FactorTrust
+11  66dd0f01bd6a0335850c3107     address-2      input           ID              ContentPlaceHolder1_txtAddress2     False    12  https://factortrust.com/consumer/optout.aspx  FactorTrust
+12  66dd0f01bd6a0335850c3109          city      input           ID                  ContentPlaceHolder1_txtCity     False    13  https://factortrust.com/consumer/optout.aspx  FactorTrust
+13  66dd0f01bd6a0335850c310b         state     select           ID  ContentPlaceHolder1_ctlStates_DropDownList1     False    14  https://factortrust.com/consumer/optout.aspx  FactorTrust
+14  66dd0f01bd6a0335850c310d           zip      input           ID                   ContentPlaceHolder1_txtZip     False    15  https://factortrust.com/consumer/optout.aspx  FactorTrust
+15  66dd0f01bd6a0335850c310f         email      input           ID                 ContentPlaceHolder1_txtEmail     False    16  https://factortrust.com/consumer/optout.aspx  FactorTrust
+16  66dd0f01bd6a0335850c3111  final-submit     button           ID               ContentPlaceHolder1_btnConfirm     False    17  https://factortrust.com/consumer/optout.aspx  FactorTrust
+2024-09-11 12:50:01,317 - INFO - Form data loaded successfully for FactorTrust.
+2024-09-11 12:50:01,355 - INFO - Locators data for FactorTrust: 
+                         _id    field_name field_type locator_type                                locator_value  optional  rank                                           url website_name
+0   66dd0f01bd6a0335850c30f1        opt-in      radio           ID                ContentPlaceHolder1_rbtnOptIn     False     1  https://factortrust.com/consumer/optout.aspx  FactorTrust
+1   66dd0f01bd6a0335850c30f3        submit     button           ID               ContentPlaceHolder1_btnConfirm     False     2  https://factortrust.com/consumer/optout.aspx  FactorTrust
+2   66dd0f01bd6a0335850c30f5    first-name      input           ID             ContentPlaceHolder1_txtFirstName     False     3  https://factortrust.com/consumer/optout.aspx  FactorTrust
+3   66dd0f01bd6a0335850c30f7     last-name      input           ID              ContentPlaceHolder1_txtLastName     False     4  https://factortrust.com/consumer/optout.aspx  FactorTrust
+4   66dd0f01bd6a0335850c30f9     ssn_part1      input           ID          ContentPlaceHolder1_ctlSsn_txtThree     False     5  https://factortrust.com/consumer/optout.aspx  FactorTrust
+5   66dd0f01bd6a0335850c30fb     ssn_part2      input           ID            ContentPlaceHolder1_ctlSsn_txtTwo     False     6  https://factortrust.com/consumer/optout.aspx  FactorTrust
+6   66dd0f01bd6a0335850c30fd     ssn_part3      input           ID           ContentPlaceHolder1_ctlSsn_txtFour     False     7  https://factortrust.com/consumer/optout.aspx  FactorTrust
+7   66dd0f01bd6a0335850c30ff     dob_month     select           ID          ContentPlaceHolder1_ctlDob_lstMonth     False     8  https://factortrust.com/consumer/optout.aspx  FactorTrust
+8   66dd0f01bd6a0335850c3101       dob_day     select           ID            ContentPlaceHolder1_ctlDob_lstDay     False     9  https://factortrust.com/consumer/optout.aspx  FactorTrust
+9   66dd0f01bd6a0335850c3103      dob_year      input           ID           ContentPlaceHolder1_ctlDob_txtYear     False    10  https://factortrust.com/consumer/optout.aspx  FactorTrust
+10  66dd0f01bd6a0335850c3105     address-1      input           ID              ContentPlaceHolder1_txtAddress1     False    11  https://factortrust.com/consumer/optout.aspx  FactorTrust
+11  66dd0f01bd6a0335850c3107     address-2      input           ID              ContentPlaceHolder1_txtAddress2     False    12  https://factortrust.com/consumer/optout.aspx  FactorTrust
+12  66dd0f01bd6a0335850c3109          city      input           ID                  ContentPlaceHolder1_txtCity     False    13  https://factortrust.com/consumer/optout.aspx  FactorTrust
+13  66dd0f01bd6a0335850c310b         state     select           ID  ContentPlaceHolder1_ctlStates_DropDownList1     False    14  https://factortrust.com/consumer/optout.aspx  FactorTrust
+14  66dd0f01bd6a0335850c310d           zip      input           ID                   ContentPlaceHolder1_txtZip     False    15  https://factortrust.com/consumer/optout.aspx  FactorTrust
+15  66dd0f01bd6a0335850c310f         email      input           ID                 ContentPlaceHolder1_txtEmail     False    16  https://factortrust.com/consumer/optout.aspx  FactorTrust
+16  66dd0f01bd6a0335850c3111  final-submit     button           ID               ContentPlaceHolder1_btnConfirm     False    17  https://factortrust.com/consumer/optout.aspx  FactorTrust
+2024-09-11 12:50:01,365 - INFO - Attempting to create a new page for Yasin Omar on FactorTrust.
+2024-09-11 12:50:02,621 - INFO - Navigating to URL: https://factortrust.com/consumer/optout.aspx for FactorTrust.
+2024-09-11 12:50:07,388 - INFO - Page loaded successfully for FactorTrust with status 200.
+2024-09-11 12:50:07,394 - INFO - Processing field at index 0 (Rank: 1): _id                                  66dd0f01bd6a0335850c30f1
+field_name                                             opt-in
+field_type                                              radio
+locator_type                                               ID
+locator_value                   ContentPlaceHolder1_rbtnOptIn
+optional                                                False
+rank                                                        1
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 0, dtype: object
+2024-09-11 12:50:07,399 - INFO - Waiting for element with selector: ContentPlaceHolder1_rbtnOptIn
+2024-09-11 12:50:09,416 - ERROR - Error scrolling to element ContentPlaceHolder1_rbtnOptIn: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_rbtnOptIn") to be visible
+
+2024-09-11 12:50:09,419 - INFO - Waiting for element with selector: ContentPlaceHolder1_rbtnOptIn
+2024-09-11 12:50:09,421 - INFO - Mapped field opt-in to opt-in
+2024-09-11 12:50:09,559 - INFO - Element with selector: ContentPlaceHolder1_rbtnOptIn found.
+2024-09-11 12:50:09,943 - INFO - Clicked opt-in successfully.
+2024-09-11 12:50:09,944 - INFO - Logged opt-in: True in submission_data
+2024-09-11 12:50:10,948 - INFO - Processing field at index 1 (Rank: 2): _id                                  66dd0f01bd6a0335850c30f3
+field_name                                             submit
+field_type                                             button
+locator_type                                               ID
+locator_value                  ContentPlaceHolder1_btnConfirm
+optional                                                False
+rank                                                        2
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 1, dtype: object
+2024-09-11 12:50:10,952 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-11 12:50:12,967 - ERROR - Error scrolling to element ContentPlaceHolder1_btnConfirm: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_btnConfirm") to be visible
+
+2024-09-11 12:50:12,969 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-11 12:50:12,970 - INFO - Mapped field submit to submit
+2024-09-11 12:50:13,094 - INFO - Element with selector: ContentPlaceHolder1_btnConfirm found.
+2024-09-11 12:50:13,322 - INFO - Clicking submit button submit.
+2024-09-11 12:50:13,839 - INFO - Clicked submit successfully.
+2024-09-11 12:50:13,840 - WARNING - No data found for submit in individual_data.
+2024-09-11 12:50:14,834 - INFO - Processing field at index 2 (Rank: 3): _id                                  66dd0f01bd6a0335850c30f5
+field_name                                         first-name
+field_type                                              input
+locator_type                                               ID
+locator_value                ContentPlaceHolder1_txtFirstName
+optional                                                False
+rank                                                        3
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 2, dtype: object
+2024-09-11 12:50:14,839 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtFirstName
+2024-09-11 12:50:16,850 - ERROR - Error scrolling to element ContentPlaceHolder1_txtFirstName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtFirstName") to be visible
+
+2024-09-11 12:50:16,853 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtFirstName
+2024-09-11 12:50:16,855 - INFO - Mapped field first-name to first name
+2024-09-11 12:50:17,154 - INFO - Element with selector: ContentPlaceHolder1_txtFirstName found.
+2024-09-11 12:50:17,796 - INFO - Filling field first-name with data: Yasin
+2024-09-11 12:50:18,030 - INFO - Clicked first-name successfully.
+2024-09-11 12:50:18,031 - INFO - Logged first name: Yasin in submission_data
+2024-09-11 12:50:19,036 - INFO - Processing field at index 3 (Rank: 4): _id                                  66dd0f01bd6a0335850c30f7
+field_name                                          last-name
+field_type                                              input
+locator_type                                               ID
+locator_value                 ContentPlaceHolder1_txtLastName
+optional                                                False
+rank                                                        4
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 3, dtype: object
+2024-09-11 12:50:19,041 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtLastName
+2024-09-11 12:50:21,053 - ERROR - Error scrolling to element ContentPlaceHolder1_txtLastName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtLastName") to be visible
+
+2024-09-11 12:50:21,056 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtLastName
+2024-09-11 12:50:21,058 - INFO - Mapped field last-name to last name
+2024-09-11 12:50:21,380 - INFO - Element with selector: ContentPlaceHolder1_txtLastName found.
+2024-09-11 12:50:22,041 - INFO - Filling field last-name with data: Omar
+2024-09-11 12:50:22,360 - INFO - Clicked last-name successfully.
+2024-09-11 12:50:22,362 - INFO - Logged last name: Omar in submission_data
+2024-09-11 12:50:23,365 - INFO - Processing field at index 4 (Rank: 5): _id                                  66dd0f01bd6a0335850c30f9
+field_name                                          ssn_part1
+field_type                                              input
+locator_type                                               ID
+locator_value             ContentPlaceHolder1_ctlSsn_txtThree
+optional                                                False
+rank                                                        5
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 4, dtype: object
+2024-09-11 12:50:23,370 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtThree
+2024-09-11 12:50:25,383 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlSsn_txtThree: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlSsn_txtThree") to be visible
+
+2024-09-11 12:50:25,386 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtThree
+2024-09-11 12:50:25,388 - INFO - Mapped field ssn_part1 to ssn_part1
+2024-09-11 12:50:25,732 - INFO - Element with selector: ContentPlaceHolder1_ctlSsn_txtThree found.
+2024-09-11 12:50:26,404 - INFO - Filling field ssn_part1 with data: 617
+2024-09-11 12:50:26,614 - INFO - Clicked ssn_part1 successfully.
+2024-09-11 12:50:26,616 - INFO - Logged ssn_part1: 617 in submission_data
+2024-09-11 12:50:27,620 - INFO - Processing field at index 5 (Rank: 6): _id                                  66dd0f01bd6a0335850c30fb
+field_name                                          ssn_part2
+field_type                                              input
+locator_type                                               ID
+locator_value               ContentPlaceHolder1_ctlSsn_txtTwo
+optional                                                False
+rank                                                        6
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 5, dtype: object
+2024-09-11 12:50:27,626 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtTwo
+2024-09-11 12:50:29,639 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlSsn_txtTwo: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlSsn_txtTwo") to be visible
+
+2024-09-11 12:50:29,642 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtTwo
+2024-09-11 12:50:29,644 - INFO - Mapped field ssn_part2 to ssn_part2
+2024-09-11 12:50:29,759 - INFO - Element with selector: ContentPlaceHolder1_ctlSsn_txtTwo found.
+2024-09-11 12:50:29,952 - INFO - Filling field ssn_part2 with data: 80
+2024-09-11 12:50:30,066 - INFO - Clicked ssn_part2 successfully.
+2024-09-11 12:50:30,068 - INFO - Logged ssn_part2: 80 in submission_data
+2024-09-11 12:50:31,070 - INFO - Processing field at index 6 (Rank: 7): _id                                  66dd0f01bd6a0335850c30fd
+field_name                                          ssn_part3
+field_type                                              input
+locator_type                                               ID
+locator_value              ContentPlaceHolder1_ctlSsn_txtFour
+optional                                                False
+rank                                                        7
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 6, dtype: object
+2024-09-11 12:50:31,075 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtFour
+2024-09-11 12:50:33,087 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlSsn_txtFour: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlSsn_txtFour") to be visible
+
+2024-09-11 12:50:33,090 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlSsn_txtFour
+2024-09-11 12:50:33,092 - INFO - Mapped field ssn_part3 to ssn_part3
+2024-09-11 12:50:33,236 - INFO - Element with selector: ContentPlaceHolder1_ctlSsn_txtFour found.
+2024-09-11 12:50:33,444 - INFO - Filling field ssn_part3 with data: 5096
+2024-09-11 12:50:33,560 - INFO - Clicked ssn_part3 successfully.
+2024-09-11 12:50:33,561 - INFO - Logged ssn_part3: 5096 in submission_data
+2024-09-11 12:50:34,565 - INFO - Processing field at index 7 (Rank: 8): _id                                  66dd0f01bd6a0335850c30ff
+field_name                                          dob_month
+field_type                                             select
+locator_type                                               ID
+locator_value             ContentPlaceHolder1_ctlDob_lstMonth
+optional                                                False
+rank                                                        8
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 7, dtype: object
+2024-09-11 12:50:34,568 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstMonth
+2024-09-11 12:50:36,579 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlDob_lstMonth: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlDob_lstMonth") to be visible
+
+2024-09-11 12:50:36,582 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstMonth
+2024-09-11 12:50:36,584 - INFO - Mapped field dob_month to dob_month
+2024-09-11 12:50:36,688 - INFO - Element with selector: ContentPlaceHolder1_ctlDob_lstMonth found.
+2024-09-11 12:50:36,892 - INFO - Selecting option for dob_month: 10
+2024-09-11 12:50:36,973 - INFO - Clicked dob_month successfully.
+2024-09-11 12:50:36,974 - INFO - Logged dob_month: 10 in submission_data
+2024-09-11 12:50:37,978 - INFO - Processing field at index 8 (Rank: 9): _id                                  66dd0f01bd6a0335850c3101
+field_name                                            dob_day
+field_type                                             select
+locator_type                                               ID
+locator_value               ContentPlaceHolder1_ctlDob_lstDay
+optional                                                False
+rank                                                        9
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 8, dtype: object
+2024-09-11 12:50:37,983 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstDay
+2024-09-11 12:50:39,995 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlDob_lstDay: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlDob_lstDay") to be visible
+
+2024-09-11 12:50:39,997 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_lstDay
+2024-09-11 12:50:39,999 - INFO - Mapped field dob_day to dob_day
+2024-09-11 12:50:40,151 - INFO - Element with selector: ContentPlaceHolder1_ctlDob_lstDay found.
+2024-09-11 12:50:40,469 - INFO - Selecting option for dob_day: 22
+2024-09-11 12:50:40,566 - INFO - Clicked dob_day successfully.
+2024-09-11 12:50:40,567 - INFO - Logged dob_day: 22 in submission_data
+2024-09-11 12:50:41,569 - INFO - Processing field at index 9 (Rank: 10): _id                                  66dd0f01bd6a0335850c3103
+field_name                                           dob_year
+field_type                                              input
+locator_type                                               ID
+locator_value              ContentPlaceHolder1_ctlDob_txtYear
+optional                                                False
+rank                                                       10
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 9, dtype: object
+2024-09-11 12:50:41,574 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_txtYear
+2024-09-11 12:50:43,587 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlDob_txtYear: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlDob_txtYear") to be visible
+
+2024-09-11 12:50:43,590 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlDob_txtYear
+2024-09-11 12:50:43,592 - INFO - Mapped field dob_year to dob_year
+2024-09-11 12:50:43,736 - INFO - Element with selector: ContentPlaceHolder1_ctlDob_txtYear found.
+2024-09-11 12:50:43,930 - INFO - Filling field dob_year with data: 1995
+2024-09-11 12:50:44,024 - INFO - Clicked dob_year successfully.
+2024-09-11 12:50:44,025 - INFO - Logged dob_year: 1995 in submission_data
+2024-09-11 12:50:45,028 - INFO - Processing field at index 10 (Rank: 11): _id                                  66dd0f01bd6a0335850c3105
+field_name                                          address-1
+field_type                                              input
+locator_type                                               ID
+locator_value                 ContentPlaceHolder1_txtAddress1
+optional                                                False
+rank                                                       11
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 10, dtype: object
+2024-09-11 12:50:45,033 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress1
+2024-09-11 12:50:47,046 - ERROR - Error scrolling to element ContentPlaceHolder1_txtAddress1: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtAddress1") to be visible
+
+2024-09-11 12:50:47,049 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress1
+2024-09-11 12:50:47,051 - INFO - Mapped field address-1 to address 1
+2024-09-11 12:50:47,165 - INFO - Element with selector: ContentPlaceHolder1_txtAddress1 found.
+2024-09-11 12:50:47,362 - INFO - Filling field address-1 with data: 1773 Heritage Ln
+2024-09-11 12:50:47,460 - INFO - Clicked address-1 successfully.
+2024-09-11 12:50:47,461 - INFO - Logged address 1: 1773 Heritage Ln in submission_data
+2024-09-11 12:50:48,465 - INFO - Processing field at index 11 (Rank: 12): _id                                  66dd0f01bd6a0335850c3107
+field_name                                          address-2
+field_type                                              input
+locator_type                                               ID
+locator_value                 ContentPlaceHolder1_txtAddress2
+optional                                                False
+rank                                                       12
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 11, dtype: object
+2024-09-11 12:50:48,470 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress2
+2024-09-11 12:50:50,483 - ERROR - Error scrolling to element ContentPlaceHolder1_txtAddress2: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtAddress2") to be visible
+
+2024-09-11 12:50:50,486 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtAddress2
+2024-09-11 12:50:50,487 - INFO - Mapped field address-2 to address 2
+2024-09-11 12:50:50,621 - INFO - Element with selector: ContentPlaceHolder1_txtAddress2 found.
+2024-09-11 12:50:50,809 - INFO - Filling field address-2 with data: Apt 2038
+2024-09-11 12:50:50,895 - INFO - Clicked address-2 successfully.
+2024-09-11 12:50:50,897 - INFO - Logged address 2: Apt 2038 in submission_data
+2024-09-11 12:50:51,901 - INFO - Processing field at index 12 (Rank: 13): _id                                  66dd0f01bd6a0335850c3109
+field_name                                               city
+field_type                                              input
+locator_type                                               ID
+locator_value                     ContentPlaceHolder1_txtCity
+optional                                                False
+rank                                                       13
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 12, dtype: object
+2024-09-11 12:50:51,906 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtCity
+2024-09-11 12:50:53,919 - ERROR - Error scrolling to element ContentPlaceHolder1_txtCity: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtCity") to be visible
+
+2024-09-11 12:50:53,922 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtCity
+2024-09-11 12:50:53,923 - INFO - Mapped field city to city
+2024-09-11 12:50:54,047 - INFO - Element with selector: ContentPlaceHolder1_txtCity found.
+2024-09-11 12:50:54,261 - INFO - Filling field city with data: Sacramento
+2024-09-11 12:50:54,357 - INFO - Clicked city successfully.
+2024-09-11 12:50:54,358 - INFO - Logged city: Sacramento in submission_data
+2024-09-11 12:50:55,362 - INFO - Processing field at index 13 (Rank: 14): _id                                  66dd0f01bd6a0335850c310b
+field_name                                              state
+field_type                                             select
+locator_type                                               ID
+locator_value     ContentPlaceHolder1_ctlStates_DropDownList1
+optional                                                False
+rank                                                       14
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 13, dtype: object
+2024-09-11 12:50:55,368 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlStates_DropDownList1
+2024-09-11 12:50:57,378 - ERROR - Error scrolling to element ContentPlaceHolder1_ctlStates_DropDownList1: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_ctlStates_DropDownList1") to be visible
+
+2024-09-11 12:50:57,380 - INFO - Waiting for element with selector: ContentPlaceHolder1_ctlStates_DropDownList1
+2024-09-11 12:50:57,382 - INFO - Mapped field state to state
+2024-09-11 12:50:57,492 - INFO - Element with selector: ContentPlaceHolder1_ctlStates_DropDownList1 found.
+2024-09-11 12:50:57,670 - INFO - Selecting option for state: CA
+2024-09-11 12:50:57,744 - INFO - Clicked state successfully.
+2024-09-11 12:50:57,745 - INFO - Logged state: CA in submission_data
+2024-09-11 12:50:58,749 - INFO - Processing field at index 14 (Rank: 15): _id                                  66dd0f01bd6a0335850c310d
+field_name                                                zip
+field_type                                              input
+locator_type                                               ID
+locator_value                      ContentPlaceHolder1_txtZip
+optional                                                False
+rank                                                       15
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 14, dtype: object
+2024-09-11 12:50:58,753 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtZip
+2024-09-11 12:51:00,763 - ERROR - Error scrolling to element ContentPlaceHolder1_txtZip: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtZip") to be visible
+
+2024-09-11 12:51:00,766 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtZip
+2024-09-11 12:51:00,767 - INFO - Mapped field zip to zip
+2024-09-11 12:51:00,887 - INFO - Element with selector: ContentPlaceHolder1_txtZip found.
+2024-09-11 12:51:01,110 - INFO - Filling field zip with data: 95815
+2024-09-11 12:51:01,247 - INFO - Clicked zip successfully.
+2024-09-11 12:51:01,248 - INFO - Logged zip: 95815 in submission_data
+2024-09-11 12:51:02,253 - INFO - Processing field at index 15 (Rank: 16): _id                                  66dd0f01bd6a0335850c310f
+field_name                                              email
+field_type                                              input
+locator_type                                               ID
+locator_value                    ContentPlaceHolder1_txtEmail
+optional                                                False
+rank                                                       16
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 15, dtype: object
+2024-09-11 12:51:02,257 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtEmail
+2024-09-11 12:51:04,269 - ERROR - Error scrolling to element ContentPlaceHolder1_txtEmail: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_txtEmail") to be visible
+
+2024-09-11 12:51:04,271 - INFO - Waiting for element with selector: ContentPlaceHolder1_txtEmail
+2024-09-11 12:51:04,273 - INFO - Mapped field email to email
+2024-09-11 12:51:04,392 - INFO - Element with selector: ContentPlaceHolder1_txtEmail found.
+2024-09-11 12:51:04,612 - INFO - Filling field email with data: yasin.omar00@hotmail.com
+2024-09-11 12:51:04,710 - INFO - Clicked email successfully.
+2024-09-11 12:51:04,711 - INFO - Logged email: yasin.omar00@hotmail.com in submission_data
+2024-09-11 12:51:05,715 - INFO - Processing field at index 16 (Rank: 17): _id                                  66dd0f01bd6a0335850c3111
+field_name                                       final-submit
+field_type                                             button
+locator_type                                               ID
+locator_value                  ContentPlaceHolder1_btnConfirm
+optional                                                False
+rank                                                       17
+url              https://factortrust.com/consumer/optout.aspx
+website_name                                      FactorTrust
+Name: 16, dtype: object
+2024-09-11 12:51:05,719 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-11 12:51:07,728 - ERROR - Error scrolling to element ContentPlaceHolder1_btnConfirm: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ContentPlaceHolder1_btnConfirm") to be visible
+
+2024-09-11 12:51:07,731 - INFO - Waiting for element with selector: ContentPlaceHolder1_btnConfirm
+2024-09-11 12:51:07,733 - INFO - Mapped field final-submit to final-submit
+2024-09-11 12:51:07,844 - INFO - Element with selector: ContentPlaceHolder1_btnConfirm found.
+2024-09-11 12:51:08,036 - INFO - Clicking submit button final-submit.
+2024-09-11 12:51:08,990 - INFO - Clicked final-submit successfully.
+2024-09-11 12:51:08,991 - WARNING - No data found for final-submit in individual_data.
+2024-09-11 12:51:09,982 - INFO - Final submit button clicked for Yasin Omar on FactorTrust. Waiting for 2 seconds before taking screenshot.
+2024-09-11 12:51:12,386 - INFO - Submission data after ObjectId conversion: {'opt-in': True, 'submit': 'clicked', 'first name': 'Yasin', 'last name': 'Omar', 'ssn_part1': '617', 'ssn_part2': '80', 'ssn_part3': '5096', 'dob_month': '10', 'dob_day': '22', 'dob_year': '1995', 'address 1': '1773 Heritage Ln', 'address 2': 'Apt 2038', 'city': 'Sacramento', 'state': 'CA', 'zip': '95815', 'email': 'yasin.omar00@hotmail.com', 'final-submit': 'clicked'}
+2024-09-11 12:51:12,391 - INFO - Logged successful submission for Yasin Omar on FactorTrust.
+2024-09-11 12:51:12,440 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1726.
+2024-09-11 12:51:12,441 - INFO - Marked submission as completed for Yasin Omar on FactorTrust.
+2024-09-11 12:51:12,442 - INFO - Form submitted successfully for Yasin Omar on FactorTrust.
+2024-09-11 12:51:12,568 - INFO - Upserted submission record with individual_id: 66dd0f01bd6a0335850c30d8, website_id: 66dcd095bd6a0335850c1726
+2024-09-11 12:51:12,572 - INFO - Upserted submission record with individual_id: 66dd0f01bd6a0335850c30d8, website_id: 66dcd095bd6a0335850c1726
+2024-09-11 12:51:12,573 - INFO - Submission record created or updated with ID: 66dde2ecbd6a0335850c899b
+2024-09-11 12:51:12,577 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1726.
+2024-09-11 12:51:12,578 - INFO - Moving to the next website for Yasin Omar.
+2024-09-11 12:51:12,579 - INFO - Submission successful for Yasin Omar on FactorTrust. Moving to the next website.
+2024-09-11 12:51:12,581 - INFO - Processing submission for Yasin Omar on AMEX Prequalify (Website ID: 66dcd095bd6a0335850c1728)
+2024-09-11 12:51:12,658 - INFO - Cleaned form_data:                         _id    field_name field_type  locator_type  ... optional  rank                                                url     website_name
+0  66dd0f01bd6a0335850c3115    first-name      input            ID  ...    False    18  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+1  66dd0f01bd6a0335850c3117     last-name      input            ID  ...    False    19  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+2  66dd0f01bd6a0335850c3119     address-1      input            ID  ...    False    20  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+3  66dd0f01bd6a0335850c311b     address-2      input  CSS_SELECTOR  ...     True    21  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+4  66dd0f01bd6a0335850c311d          city      input            ID  ...    False    22  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+5  66dd0f01bd6a0335850c311f         state     select         XPATH  ...    False    23  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+6  66dd0f01bd6a0335850c3121           zip      input            ID  ...    False    24  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+7  66dd0f01bd6a0335850c3123     ssn_part3      input            ID  ...    False    25  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+8  66dd0f01bd6a0335850c3125        income      input            ID  ...    False    26  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+9  66dd0f01bd6a0335850c3127  final-submit     button  CSS_SELECTOR  ...    False    27  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+
+[10 rows x 9 columns]
+2024-09-11 12:51:12,667 - INFO - Form data loaded successfully for AMEX Prequalify.
+2024-09-11 12:51:12,709 - INFO - Locators data for AMEX Prequalify: 
+                        _id    field_name field_type  locator_type  ... optional  rank                                                url     website_name
+0  66dd0f01bd6a0335850c3115    first-name      input            ID  ...    False    18  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+1  66dd0f01bd6a0335850c3117     last-name      input            ID  ...    False    19  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+2  66dd0f01bd6a0335850c3119     address-1      input            ID  ...    False    20  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+3  66dd0f01bd6a0335850c311b     address-2      input  CSS_SELECTOR  ...     True    21  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+4  66dd0f01bd6a0335850c311d          city      input            ID  ...    False    22  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+5  66dd0f01bd6a0335850c311f         state     select         XPATH  ...    False    23  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+6  66dd0f01bd6a0335850c3121           zip      input            ID  ...    False    24  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+7  66dd0f01bd6a0335850c3123     ssn_part3      input            ID  ...    False    25  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+8  66dd0f01bd6a0335850c3125        income      input            ID  ...    False    26  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+9  66dd0f01bd6a0335850c3127  final-submit     button  CSS_SELECTOR  ...    False    27  https://card.americanexpress.com/d/pre-qualifi...  AMEX Prequalify
+
+[10 rows x 9 columns]
+2024-09-11 12:51:12,716 - INFO - Attempting to create a new page for Yasin Omar on AMEX Prequalify.
+2024-09-11 12:51:13,083 - INFO - Navigating to URL: https://card.americanexpress.com/d/pre-qualified-offers/ for AMEX Prequalify.
+2024-09-11 12:51:15,357 - INFO - Page loaded successfully for AMEX Prequalify with status 200.
+2024-09-11 12:51:15,361 - INFO - Processing field at index 0 (Rank: 18): _id                                       66dd0f01bd6a0335850c3115
+field_name                                              first-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                            firstName
+optional                                                     False
+rank                                                            18
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 0, dtype: object
+2024-09-11 12:51:15,367 - INFO - Waiting for element with selector: firstName
+2024-09-11 12:51:17,381 - ERROR - Error scrolling to element firstName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("firstName") to be visible
+
+2024-09-11 12:51:17,384 - INFO - Waiting for element with selector: firstName
+2024-09-11 12:51:17,386 - INFO - Mapped field first-name to first name
+2024-09-11 12:51:17,720 - INFO - Element with selector: firstName found.
+2024-09-11 12:51:17,923 - INFO - Filling field first-name with data: Yasin
+2024-09-11 12:51:18,024 - INFO - Clicked first-name successfully.
+2024-09-11 12:51:18,025 - INFO - Logged first name: Yasin in submission_data
+2024-09-11 12:51:19,022 - INFO - Processing field at index 1 (Rank: 19): _id                                       66dd0f01bd6a0335850c3117
+field_name                                               last-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                             lastName
+optional                                                     False
+rank                                                            19
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 1, dtype: object
+2024-09-11 12:51:19,026 - INFO - Waiting for element with selector: lastName
+2024-09-11 12:51:21,040 - ERROR - Error scrolling to element lastName: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("lastName") to be visible
+
+2024-09-11 12:51:21,043 - INFO - Waiting for element with selector: lastName
+2024-09-11 12:51:21,045 - INFO - Mapped field last-name to last name
+2024-09-11 12:51:21,172 - INFO - Element with selector: lastName found.
+2024-09-11 12:51:21,361 - INFO - Filling field last-name with data: Omar
+2024-09-11 12:51:21,450 - INFO - Clicked last-name successfully.
+2024-09-11 12:51:21,451 - INFO - Logged last name: Omar in submission_data
+2024-09-11 12:51:22,455 - INFO - Processing field at index 2 (Rank: 20): _id                                       66dd0f01bd6a0335850c3119
+field_name                                               address-1
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                             address1
+optional                                                     False
+rank                                                            20
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 2, dtype: object
+2024-09-11 12:51:22,459 - INFO - Waiting for element with selector: address1
+2024-09-11 12:51:24,468 - ERROR - Error scrolling to element address1: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("address1") to be visible
+
+2024-09-11 12:51:24,471 - INFO - Waiting for element with selector: address1
+2024-09-11 12:51:24,473 - INFO - Mapped field address-1 to address 1
+2024-09-11 12:51:24,570 - INFO - Element with selector: address1 found.
+2024-09-11 12:51:24,748 - INFO - Filling field address-1 with data: 1773 Heritage Ln
+2024-09-11 12:51:24,833 - INFO - Clicked address-1 successfully.
+2024-09-11 12:51:24,835 - INFO - Logged address 1: 1773 Heritage Ln in submission_data
+2024-09-11 12:51:25,837 - INFO - Processing field at index 3 (Rank: 21): _id                                       66dd0f01bd6a0335850c311b
+field_name                                               address-2
+field_type                                                   input
+locator_type                                          CSS_SELECTOR
+locator_value    div.-mx-16:nth-child(3) > div:nth-child(2) > i...
+optional                                                      True
+rank                                                            21
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 3, dtype: object
+2024-09-11 12:51:25,841 - INFO - Waiting for element with selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-11 12:51:25,939 - INFO - Scrolling to element with selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-11 12:51:27,973 - INFO - Scrolled to element: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-11 12:51:27,975 - INFO - Waiting for element with selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1)
+2024-09-11 12:51:27,977 - INFO - Mapped field address-2 to address 2
+2024-09-11 12:51:29,992 - ERROR - Error locating or clicking field (Selector: div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), Field: address-2): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#div.-mx-16:nth-child(3) > div:nth-child(2) > input:nth-child(1), input[name*='Confirm'], input[type='submit']") to be visible
+
+2024-09-11 12:51:29,995 - INFO - Logged address 2: Apt 2038 in submission_data
+2024-09-11 12:51:30,998 - INFO - Processing field at index 4 (Rank: 22): _id                                       66dd0f01bd6a0335850c311d
+field_name                                                    city
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                                 city
+optional                                                     False
+rank                                                            22
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 4, dtype: object
+2024-09-11 12:51:31,002 - INFO - Waiting for element with selector: city
+2024-09-11 12:51:33,011 - ERROR - Error scrolling to element city: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("city") to be visible
+
+2024-09-11 12:51:33,014 - INFO - Waiting for element with selector: city
+2024-09-11 12:51:33,016 - INFO - Mapped field city to city
+2024-09-11 12:51:33,116 - INFO - Element with selector: city found.
+2024-09-11 12:51:33,308 - INFO - Filling field city with data: Sacramento
+2024-09-11 12:51:33,395 - INFO - Clicked city successfully.
+2024-09-11 12:51:33,396 - INFO - Logged city: Sacramento in submission_data
+2024-09-11 12:51:34,401 - INFO - Processing field at index 5 (Rank: 23): _id                                       66dd0f01bd6a0335850c311f
+field_name                                                   state
+field_type                                                  select
+locator_type                                                 XPATH
+locator_value    /html/body/div/div/main/div/section/div/div/di...
+optional                                                     False
+rank                                                            23
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 5, dtype: object
+2024-09-11 12:51:34,406 - INFO - Waiting for element with selector: /html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select
+2024-09-11 12:51:34,422 - ERROR - Error scrolling to element /html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select: Page.wait_for_selector: Unexpected token "/" while parsing selector "/html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select"
+Call log:
+waiting for /html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select to be visible
+
+2024-09-11 12:51:34,424 - INFO - Waiting for element with selector: /html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select
+2024-09-11 12:51:34,424 - INFO - Mapped field state to state
+2024-09-11 12:51:34,440 - ERROR - Error locating or clicking field (Selector: /html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select, Field: state): Page.wait_for_selector: Unexpected token "#" while parsing selector "select#/html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select"
+Call log:
+waiting for select#/html/body/div/div/main/div/section/div/div/div/div[1]/form/div[3]/div[2]/select to be visible
+
+2024-09-11 12:51:34,445 - INFO - Logged state: CA in submission_data
+2024-09-11 12:51:35,450 - INFO - Processing field at index 6 (Rank: 24): _id                                       66dd0f01bd6a0335850c3121
+field_name                                                     zip
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                              zipCode
+optional                                                     False
+rank                                                            24
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 6, dtype: object
+2024-09-11 12:51:35,453 - INFO - Waiting for element with selector: zipCode
+2024-09-11 12:51:37,466 - ERROR - Error scrolling to element zipCode: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("zipCode") to be visible
+
+2024-09-11 12:51:37,469 - INFO - Waiting for element with selector: zipCode
+2024-09-11 12:51:37,470 - INFO - Mapped field zip to zip
+2024-09-11 12:51:37,769 - INFO - Element with selector: zipCode found.
+2024-09-11 12:51:37,988 - INFO - Filling field zip with data: 95815
+2024-09-11 12:51:38,091 - INFO - Clicked zip successfully.
+2024-09-11 12:51:38,093 - INFO - Logged zip: 95815 in submission_data
+2024-09-11 12:51:39,095 - INFO - Processing field at index 7 (Rank: 25): _id                                       66dd0f01bd6a0335850c3123
+field_name                                               ssn_part3
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                                  ssn
+optional                                                     False
+rank                                                            25
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 7, dtype: object
+2024-09-11 12:51:39,099 - INFO - Waiting for element with selector: ssn
+2024-09-11 12:51:41,111 - ERROR - Error scrolling to element ssn: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("ssn") to be visible
+
+2024-09-11 12:51:41,114 - INFO - Waiting for element with selector: ssn
+2024-09-11 12:51:41,116 - INFO - Mapped field ssn_part3 to ssn_part3
+2024-09-11 12:51:41,262 - INFO - Element with selector: ssn found.
+2024-09-11 12:51:42,196 - INFO - Filling field ssn_part3 with data: 5096
+2024-09-11 12:51:42,294 - ERROR - Error locating or clicking field (Selector: ssn, Field: ssn_part3): ElementHandle.fill: Protocol error (Input.insertText): Forbidden action: password typing is not allowed
+Call log:
+  fill("5096")
+  - attempting fill action
+  -   waiting for element to be visible, enabled and editable
+
+2024-09-11 12:51:42,297 - INFO - Logged ssn_part3: 5096 in submission_data
+2024-09-11 12:51:43,302 - INFO - Processing field at index 8 (Rank: 26): _id                                       66dd0f01bd6a0335850c3125
+field_name                                                  income
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                               income
+optional                                                     False
+rank                                                            26
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 8, dtype: object
+2024-09-11 12:51:43,307 - INFO - Waiting for element with selector: income
+2024-09-11 12:51:45,320 - ERROR - Error scrolling to element income: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("income") to be visible
+
+2024-09-11 12:51:45,322 - INFO - Waiting for element with selector: income
+2024-09-11 12:51:45,322 - INFO - Mapped field income to income
+2024-09-11 12:51:45,458 - INFO - Element with selector: income found.
+2024-09-11 12:51:46,386 - INFO - Clicked income successfully.
+2024-09-11 12:51:46,388 - INFO - Logged income: 95000 in submission_data
+2024-09-11 12:51:47,390 - INFO - Processing field at index 9 (Rank: 27): _id                                       66dd0f01bd6a0335850c3127
+field_name                                            final-submit
+field_type                                                  button
+locator_type                                          CSS_SELECTOR
+locator_value                             button.styles_btn__RsfY1
+optional                                                     False
+rank                                                            27
+url              https://card.americanexpress.com/d/pre-qualifi...
+website_name                                       AMEX Prequalify
+Name: 9, dtype: object
+2024-09-11 12:51:47,393 - INFO - Waiting for element with selector: button.styles_btn__RsfY1
+2024-09-11 12:51:47,494 - INFO - Scrolling to element with selector: button.styles_btn__RsfY1
+2024-09-11 12:51:49,525 - INFO - Scrolled to element: button.styles_btn__RsfY1
+2024-09-11 12:51:49,527 - INFO - Waiting for element with selector: button.styles_btn__RsfY1
+2024-09-11 12:51:49,529 - INFO - Mapped field final-submit to final-submit
+2024-09-11 12:51:51,542 - ERROR - Error locating or clicking field (Selector: button.styles_btn__RsfY1, Field: final-submit): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input[type='submit']#button.styles_btn__RsfY1, button#button.styles_btn__RsfY1, input[value='Submit']") to be visible
+
+2024-09-11 12:51:51,545 - WARNING - No data found for final-submit in individual_data.
+2024-09-11 12:51:52,546 - INFO - Final submit button clicked for Yasin Omar on AMEX Prequalify. Waiting for 2 seconds before taking screenshot.
+2024-09-11 12:51:54,985 - INFO - Submission data after ObjectId conversion: {'first name': 'Yasin', 'last name': 'Omar', 'address 1': '1773 Heritage Ln', 'address 2': 'Apt 2038', 'city': 'Sacramento', 'state': 'CA', 'zip': '95815', 'ssn_part3': '5096', 'income': 95000}
+2024-09-11 12:51:54,988 - INFO - Logged successful submission for Yasin Omar on AMEX Prequalify.
+2024-09-11 12:51:54,991 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1728.
+2024-09-11 12:51:54,993 - INFO - Marked submission as completed for Yasin Omar on AMEX Prequalify.
+2024-09-11 12:51:54,994 - INFO - Form submitted successfully for Yasin Omar on AMEX Prequalify.
+2024-09-11 12:51:55,163 - INFO - Upserted submission record with individual_id: 66dd0f01bd6a0335850c30d8, website_id: 66dcd095bd6a0335850c1728
+2024-09-11 12:51:55,164 - INFO - Upserted submission record with individual_id: 66dd0f01bd6a0335850c30d8, website_id: 66dcd095bd6a0335850c1728
+2024-09-11 12:51:55,165 - INFO - Submission record created or updated with ID: 66e1f4dbe0c1c703241aecf2
+2024-09-11 12:51:55,172 - INFO - Marked submission as completed for individual 66dd0f01bd6a0335850c30d8 on website 66dcd095bd6a0335850c1728.
+2024-09-11 12:51:55,173 - INFO - Moving to the next website for Yasin Omar.
+2024-09-11 12:51:55,174 - INFO - Submission successful for Yasin Omar on AMEX Prequalify. Moving to the next website.
+2024-09-11 12:51:55,175 - INFO - Processing submission for Yasin Omar on Capital One Prequalify (Website ID: 66dcd095bd6a0335850c172a)
+2024-09-11 12:51:55,243 - INFO - Cleaned form_data:                          _id         field_name field_type  locator_type  ... optional  rank                                                url            website_name
+0   66dd0f01bd6a0335850c312b             submit     button  CSS_SELECTOR  ...    False    55  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+1   66dd0f01bd6a0335850c312d         first-name      input            ID  ...    False    29  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+2   66dd0f01bd6a0335850c312f          last-name      input            ID  ...    False    30  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+3   66dd0f01bd6a0335850c3132       home-address      input            ID  ...    False    32  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+4   66dd0f01bd6a0335850c3135              email      input            ID  ...    False    34  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+5   66dd0f01bd6a0335850c3137       phone-number      input            ID  ...    False    35  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+6   66dd0f01bd6a0335850c313a  employment-status      radio            ID  ...    False    37  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+7   66dd0f01bd6a0335850c313c         occupation      input            ID  ...    False    38  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+8   66dd0f01bd6a0335850c313f             income      input            ID  ...    False    40  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+9   66dd0f01bd6a0335850c3141               rent      input            ID  ...    False    41  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+10  66dd0f01bd6a0335850c3144       bank-account      radio            ID  ...    False    43  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+11  66dd0f01bd6a0335850c3148            citizen      radio            ID  ...    False    46  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+12  66dd0f01bd6a0335850c314a  secondary-citizen      radio            ID  ...    False    47  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+13  66dd0f01bd6a0335850c314d                dob      input            ID  ...    False    49  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+14  66dd0f01bd6a0335850c314f                ssn      input            ID  ...    False    51  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+15  66dd0f01bd6a0335850c3153   ssa-verification      radio            ID  ...    False    53  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+16  66dd0f01bd6a0335850c3155          paperless      radio            ID  ...    False    54  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+17  66dd0f01bd6a0335850c3158       final-submit     button  CSS_SELECTOR  ...    False    56  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+
+[18 rows x 9 columns]
+2024-09-11 12:51:55,254 - INFO - Form data loaded successfully for Capital One Prequalify.
+2024-09-11 12:51:55,289 - INFO - Locators data for Capital One Prequalify: 
+                         _id         field_name field_type  locator_type  ... optional  rank                                                url            website_name
+0   66dd0f01bd6a0335850c312b             submit     button  CSS_SELECTOR  ...    False    55  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+1   66dd0f01bd6a0335850c312d         first-name      input            ID  ...    False    29  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+2   66dd0f01bd6a0335850c312f          last-name      input            ID  ...    False    30  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+3   66dd0f01bd6a0335850c3132       home-address      input            ID  ...    False    32  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+4   66dd0f01bd6a0335850c3135              email      input            ID  ...    False    34  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+5   66dd0f01bd6a0335850c3137       phone-number      input            ID  ...    False    35  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+6   66dd0f01bd6a0335850c313a  employment-status      radio            ID  ...    False    37  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+7   66dd0f01bd6a0335850c313c         occupation      input            ID  ...    False    38  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+8   66dd0f01bd6a0335850c313f             income      input            ID  ...    False    40  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+9   66dd0f01bd6a0335850c3141               rent      input            ID  ...    False    41  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+10  66dd0f01bd6a0335850c3144       bank-account      radio            ID  ...    False    43  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+11  66dd0f01bd6a0335850c3148            citizen      radio            ID  ...    False    46  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+12  66dd0f01bd6a0335850c314a  secondary-citizen      radio            ID  ...    False    47  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+13  66dd0f01bd6a0335850c314d                dob      input            ID  ...    False    49  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+14  66dd0f01bd6a0335850c314f                ssn      input            ID  ...    False    51  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+15  66dd0f01bd6a0335850c3153   ssa-verification      radio            ID  ...    False    53  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+16  66dd0f01bd6a0335850c3155          paperless      radio            ID  ...    False    54  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+17  66dd0f01bd6a0335850c3158       final-submit     button  CSS_SELECTOR  ...    False    56  https://www.capitalone.com/apply/credit-cards/...  Capital One Prequalify
+
+[18 rows x 9 columns]
+2024-09-11 12:51:55,300 - INFO - Attempting to create a new page for Yasin Omar on Capital One Prequalify.
+2024-09-11 12:51:55,692 - INFO - Navigating to URL: https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav for Capital One Prequalify.
+2024-09-11 12:51:57,830 - INFO - Page loaded successfully for Capital One Prequalify with status 200.
+2024-09-11 12:51:57,851 - INFO - Processing field at index 1 (Rank: 29): _id                                       66dd0f01bd6a0335850c312d
+field_name                                              first-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                           FIRST_NAME
+optional                                                     False
+rank                                                            29
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 1, dtype: object
+2024-09-11 12:51:57,857 - INFO - Waiting for element with selector: FIRST_NAME
+2024-09-11 12:51:59,869 - ERROR - Error scrolling to element FIRST_NAME: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("FIRST_NAME") to be visible
+
+2024-09-11 12:51:59,873 - INFO - Waiting for element with selector: FIRST_NAME
+2024-09-11 12:51:59,874 - INFO - Mapped field first-name to first name
+2024-09-11 12:52:01,889 - ERROR - Error locating or clicking field (Selector: FIRST_NAME, Field: first-name): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#FIRST_NAME, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input type="text" id="FIRST_NAME" autocorrect="off" name="FIRST_NAME" aria-invalid="true" aria-required="true" autocomplete="given-name" data-testid="applicantFirstName" _ngcontent-web-shell-c1910012136="" aria-describedby="FIRST_NAME_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:01,893 - INFO - Logged first name: Yasin in submission_data
+2024-09-11 12:52:02,892 - INFO - Processing field at index 2 (Rank: 30): _id                                       66dd0f01bd6a0335850c312f
+field_name                                               last-name
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                            LAST_NAME
+optional                                                     False
+rank                                                            30
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 2, dtype: object
+2024-09-11 12:52:02,897 - INFO - Waiting for element with selector: LAST_NAME
+2024-09-11 12:52:04,912 - ERROR - Error scrolling to element LAST_NAME: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("LAST_NAME") to be visible
+
+2024-09-11 12:52:04,914 - INFO - Waiting for element with selector: LAST_NAME
+2024-09-11 12:52:04,916 - INFO - Mapped field last-name to last name
+2024-09-11 12:52:06,929 - ERROR - Error locating or clicking field (Selector: LAST_NAME, Field: last-name): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#LAST_NAME, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="text" id="LAST_NAME" name="LAST_NAME" autocorrect="off" aria-invalid="true" aria-required="true" autocomplete="family-name" data-testid="applicantLastName" aria-describedby="LAST_NAME_error" _ngcontent-web-shell-c4177964995="" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:06,939 - INFO - Logged last name: Omar in submission_data
+2024-09-11 12:52:07,943 - INFO - Processing field at index 3 (Rank: 32): _id                                       66dd0f01bd6a0335850c3132
+field_name                                            home-address
+field_type                                                   input
+locator_type                                                    ID
+locator_value                            PHYSICAL_COMBINED_ADDRESS
+optional                                                     False
+rank                                                            32
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 3, dtype: object
+2024-09-11 12:52:07,949 - INFO - Waiting for element with selector: PHYSICAL_COMBINED_ADDRESS
+2024-09-11 12:52:09,961 - ERROR - Error scrolling to element PHYSICAL_COMBINED_ADDRESS: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("PHYSICAL_COMBINED_ADDRESS") to be visible
+
+2024-09-11 12:52:09,964 - INFO - Waiting for element with selector: PHYSICAL_COMBINED_ADDRESS
+2024-09-11 12:52:09,966 - INFO - Mapped field home-address to home-address
+2024-09-11 12:52:11,979 - ERROR - Error locating or clicking field (Selector: PHYSICAL_COMBINED_ADDRESS, Field: home-address): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#PHYSICAL_COMBINED_ADDRESS, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+  -   locator resolved to hidden <input placeholder="" autocorrect="off" autocomplete="off" aria-invalid="true" aria-required="true" id="PHYSICAL_COMBINED_ADDRESS" name="PHYSICAL_COMBINED_ADDRESS" _ngcontent-web-shell-c3001434718="" acquisitiongooglemapautocomplete="" data-testid="combined-address-input" class="grv-textfield__input ng-untouched ng-pristine ng-invalid pac-target-input" aria-describedby="PHYSICAL_COMBINED_ADDRESS_error PHYSICAL_COMBINED_ADDRESS_error-blank"/>
+
+2024-09-11 12:52:11,992 - INFO - Logged home-address: 1773 Heritage Ln Apt 2038, Sacramento, CA 95815 in submission_data
+2024-09-11 12:52:12,995 - INFO - Processing field at index 4 (Rank: 34): _id                                       66dd0f01bd6a0335850c3135
+field_name                                                   email
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                                EMAIL
+optional                                                     False
+rank                                                            34
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 4, dtype: object
+2024-09-11 12:52:12,999 - INFO - Waiting for element with selector: EMAIL
+2024-09-11 12:52:15,012 - ERROR - Error scrolling to element EMAIL: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("EMAIL") to be visible
+
+2024-09-11 12:52:15,015 - INFO - Waiting for element with selector: EMAIL
+2024-09-11 12:52:15,018 - INFO - Mapped field email to email
+2024-09-11 12:52:17,033 - ERROR - Error locating or clicking field (Selector: EMAIL, Field: email): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#EMAIL, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="EMAIL" type="email" name="EMAIL" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1767869502="" data-testid="applicantEmailAddress" aria-describedby="EMAIL_error EMAIL_warning" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:17,046 - INFO - Logged email: yasin.omar00@hotmail.com in submission_data
+2024-09-11 12:52:18,048 - INFO - Processing field at index 5 (Rank: 35): _id                                       66dd0f01bd6a0335850c3137
+field_name                                            phone-number
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                         PHONE_NUMBER
+optional                                                     False
+rank                                                            35
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 5, dtype: object
+2024-09-11 12:52:18,054 - INFO - Waiting for element with selector: PHONE_NUMBER
+2024-09-11 12:52:20,069 - ERROR - Error scrolling to element PHONE_NUMBER: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("PHONE_NUMBER") to be visible
+
+2024-09-11 12:52:20,071 - INFO - Waiting for element with selector: PHONE_NUMBER
+2024-09-11 12:52:20,074 - INFO - Mapped field phone-number to phone-number
+2024-09-11 12:52:22,084 - ERROR - Error locating or clicking field (Selector: PHONE_NUMBER, Field: phone-number): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#PHONE_NUMBER, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" autocorrect="off" id="PHONE_NUMBER" name="PHONE_NUMBER" aria-invalid="true" aria-required="true" autocomplete="tel-national" _ngcontent-web-shell-c505540232="" aria-describedby="PHONE_NUMBER_error" data-testid="applicantPersonalPhoneNumber" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:22,095 - INFO - Logged phone-number: 9166648580 in submission_data
+2024-09-11 12:52:23,099 - INFO - Processing field at index 6 (Rank: 37): _id                                       66dd0f01bd6a0335850c313a
+field_name                                       employment-status
+field_type                                                   radio
+locator_type                                                    ID
+locator_value                                       EMPLOYMENT:EMP
+optional                                                     False
+rank                                                            37
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 6, dtype: object
+2024-09-11 12:52:23,105 - INFO - Waiting for element with selector: EMPLOYMENT:EMP
+2024-09-11 12:52:23,148 - ERROR - Error scrolling to element EMPLOYMENT:EMP: Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'EMPLOYMENT:EMP' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("EMPLOYMENT:EMP") to be visible
+
+2024-09-11 12:52:23,156 - INFO - Waiting for element with selector: EMPLOYMENT:EMP
+2024-09-11 12:52:23,158 - INFO - Mapped field employment-status to employment-status
+2024-09-11 12:52:23,191 - ERROR - Error locating or clicking field (Selector: EMPLOYMENT:EMP, Field: employment-status): Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'input[type="radio"]#EMPLOYMENT:EMP' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("input[type='radio']#EMPLOYMENT:EMP") to be visible
+
+2024-09-11 12:52:23,194 - INFO - Logged employment-status: True in submission_data
+2024-09-11 12:52:24,199 - INFO - Processing field at index 7 (Rank: 38): _id                                       66dd0f01bd6a0335850c313c
+field_name                                              occupation
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                           OCCUPATION
+optional                                                     False
+rank                                                            38
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 7, dtype: object
+2024-09-11 12:52:24,204 - INFO - Waiting for element with selector: OCCUPATION
+2024-09-11 12:52:26,219 - ERROR - Error scrolling to element OCCUPATION: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("OCCUPATION") to be visible
+
+2024-09-11 12:52:26,222 - INFO - Waiting for element with selector: OCCUPATION
+2024-09-11 12:52:26,224 - INFO - Mapped field occupation to occupation
+2024-09-11 12:52:28,233 - ERROR - Error locating or clicking field (Selector: OCCUPATION, Field: occupation): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#OCCUPATION, input[name*='Confirm'], input[type='submit']") to be visible
+
+2024-09-11 12:52:28,235 - INFO - Logged occupation: software developer in submission_data
+2024-09-11 12:52:29,236 - INFO - Processing field at index 8 (Rank: 40): _id                                       66dd0f01bd6a0335850c313f
+field_name                                                  income
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                               INCOME
+optional                                                     False
+rank                                                            40
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 8, dtype: object
+2024-09-11 12:52:29,240 - INFO - Waiting for element with selector: INCOME
+2024-09-11 12:52:31,244 - ERROR - Error scrolling to element INCOME: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("INCOME") to be visible
+
+2024-09-11 12:52:31,247 - INFO - Waiting for element with selector: INCOME
+2024-09-11 12:52:31,248 - INFO - Mapped field income to income
+2024-09-11 12:52:33,257 - ERROR - Error locating or clicking field (Selector: INCOME, Field: income): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#INCOME, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="INCOME" name="INCOME" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c1668111302="" data-testid="applicantAnnualGrossIncome" aria-describedby="INCOME dollar-sign-income descriptor-income INCOME_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:33,269 - INFO - Logged income: 95000 in submission_data
+2024-09-11 12:52:34,273 - INFO - Processing field at index 9 (Rank: 41): _id                                       66dd0f01bd6a0335850c3141
+field_name                                                    rent
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                              HOUSING
+optional                                                     False
+rank                                                            41
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 9, dtype: object
+2024-09-11 12:52:34,279 - INFO - Waiting for element with selector: HOUSING
+2024-09-11 12:52:36,291 - ERROR - Error scrolling to element HOUSING: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("HOUSING") to be visible
+
+2024-09-11 12:52:36,294 - INFO - Waiting for element with selector: HOUSING
+2024-09-11 12:52:36,295 - INFO - Mapped field rent to rent
+2024-09-11 12:52:38,302 - ERROR - Error locating or clicking field (Selector: HOUSING, Field: rent): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#HOUSING, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="tel" id="HOUSING" name="HOUSING" autocorrect="off" aria-invalid="true" aria-required="true" _ngcontent-web-shell-c2461515740="" data-testid="applicantMonthlyHousingExpenseAmount" aria-describedby="HOUSING dollar-sign-housing descriptor-housing HOUSING_error" class="grv-textfield__input dollar-sign-input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:38,307 - WARNING - No data found for rent in individual_data.
+2024-09-11 12:52:39,309 - INFO - Processing field at index 10 (Rank: 43): _id                                       66dd0f01bd6a0335850c3144
+field_name                                            bank-account
+field_type                                                   radio
+locator_type                                                    ID
+locator_value                                     BANK_ACCOUNT:CAS
+optional                                                     False
+rank                                                            43
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 10, dtype: object
+2024-09-11 12:52:39,312 - INFO - Waiting for element with selector: BANK_ACCOUNT:CAS
+2024-09-11 12:52:39,347 - ERROR - Error scrolling to element BANK_ACCOUNT:CAS: Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'BANK_ACCOUNT:CAS' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("BANK_ACCOUNT:CAS") to be visible
+
+2024-09-11 12:52:39,351 - INFO - Waiting for element with selector: BANK_ACCOUNT:CAS
+2024-09-11 12:52:39,352 - INFO - Mapped field bank-account to bank-account
+2024-09-11 12:52:39,385 - ERROR - Error locating or clicking field (Selector: BANK_ACCOUNT:CAS, Field: bank-account): Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'input[type="radio"]#BANK_ACCOUNT:CAS' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("input[type='radio']#BANK_ACCOUNT:CAS") to be visible
+
+2024-09-11 12:52:39,388 - INFO - Logged bank-account: True in submission_data
+2024-09-11 12:52:40,391 - INFO - Processing field at index 11 (Rank: 46): _id                                       66dd0f01bd6a0335850c3148
+field_name                                                 citizen
+field_type                                                   radio
+locator_type                                                    ID
+locator_value                                   US_CITIZENSHIP:yes
+optional                                                     False
+rank                                                            46
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 11, dtype: object
+2024-09-11 12:52:40,397 - INFO - Waiting for element with selector: US_CITIZENSHIP:yes
+2024-09-11 12:52:40,442 - ERROR - Error scrolling to element US_CITIZENSHIP:yes: Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'US_CITIZENSHIP:yes' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("US_CITIZENSHIP:yes") to be visible
+
+2024-09-11 12:52:40,449 - INFO - Waiting for element with selector: US_CITIZENSHIP:yes
+2024-09-11 12:52:40,450 - INFO - Mapped field citizen to citizen
+2024-09-11 12:52:40,487 - ERROR - Error locating or clicking field (Selector: US_CITIZENSHIP:yes, Field: citizen): Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'input[type="radio"]#US_CITIZENSHIP:yes' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("input[type='radio']#US_CITIZENSHIP:yes") to be visible
+
+2024-09-11 12:52:40,492 - INFO - Logged citizen: True in submission_data
+2024-09-11 12:52:41,496 - INFO - Processing field at index 12 (Rank: 47): _id                                       66dd0f01bd6a0335850c314a
+field_name                                       secondary-citizen
+field_type                                                   radio
+locator_type                                                    ID
+locator_value                             SECONDARY_CITIZENSHIP:no
+optional                                                     False
+rank                                                            47
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 12, dtype: object
+2024-09-11 12:52:41,499 - INFO - Waiting for element with selector: SECONDARY_CITIZENSHIP:no
+2024-09-11 12:52:41,538 - ERROR - Error scrolling to element SECONDARY_CITIZENSHIP:no: Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'SECONDARY_CITIZENSHIP:no' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("SECONDARY_CITIZENSHIP:no") to be visible
+
+2024-09-11 12:52:41,543 - INFO - Waiting for element with selector: SECONDARY_CITIZENSHIP:no
+2024-09-11 12:52:41,544 - INFO - Mapped field secondary-citizen to secondary-citizen
+2024-09-11 12:52:41,572 - ERROR - Error locating or clicking field (Selector: SECONDARY_CITIZENSHIP:no, Field: secondary-citizen): Page.wait_for_selector: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'input[type="radio"]#SECONDARY_CITIZENSHIP:no' is not a valid selector.
+    at query (<anonymous>:3435:41)
+    at <anonymous>:3445:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3432:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3312:19)
+    at <anonymous>:3260:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3222:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3253:19)
+    at Object.query (<anonymous>:3467:44)
+    at <anonymous>:3425:21
+Call log:
+waiting for locator("input[type='radio']#SECONDARY_CITIZENSHIP:no") to be visible
+
+2024-09-11 12:52:41,575 - INFO - Logged secondary-citizen: False in submission_data
+2024-09-11 12:52:42,577 - INFO - Processing field at index 13 (Rank: 49): _id                                       66dd0f01bd6a0335850c314d
+field_name                                                     dob
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                                  DOB
+optional                                                     False
+rank                                                            49
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 13, dtype: object
+2024-09-11 12:52:42,581 - INFO - Waiting for element with selector: DOB
+2024-09-11 12:52:44,591 - ERROR - Error scrolling to element DOB: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("DOB") to be visible
+
+2024-09-11 12:52:44,592 - INFO - Waiting for element with selector: DOB
+2024-09-11 12:52:44,593 - INFO - Mapped field dob to dob
+2024-09-11 12:52:46,599 - ERROR - Error locating or clicking field (Selector: DOB, Field: dob): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#DOB, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input id="DOB" type="tel" name="DOB" autocorrect="off" aria-invalid="true" aria-required="true" data-testid="applicantDateOfBirth" _ngcontent-web-shell-c1885922919="" aria-describedby="DOB_error DOB_birthday" class="grv-textfield__input grv-textfield__input--dob ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:46,610 - INFO - Logged dob: 10/22/1995 in submission_data
+2024-09-11 12:52:47,614 - INFO - Processing field at index 14 (Rank: 51): _id                                       66dd0f01bd6a0335850c314f
+field_name                                                     ssn
+field_type                                                   input
+locator_type                                                    ID
+locator_value                                          CONFIRM_SSN
+optional                                                     False
+rank                                                            51
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 14, dtype: object
+2024-09-11 12:52:47,619 - INFO - Waiting for element with selector: CONFIRM_SSN
+2024-09-11 12:52:49,635 - ERROR - Error scrolling to element CONFIRM_SSN: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("CONFIRM_SSN") to be visible
+
+2024-09-11 12:52:49,637 - INFO - Waiting for element with selector: CONFIRM_SSN
+2024-09-11 12:52:49,639 - INFO - Mapped field ssn to ssn
+2024-09-11 12:52:51,652 - ERROR - Error locating or clicking field (Selector: CONFIRM_SSN, Field: ssn): Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+waiting for locator("input#CONFIRM_SSN, input[name*='Confirm'], input[type='submit']") to be visible
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+  -   locator resolved to hidden <input type="password" id="CONFIRM_SSN" autocorrect="off" autocomplete="off" name="CONFIRM_SSN" inputmode="numeric" aria-invalid="true" aria-required="true" placeholder="___-__-____" data-testid="confirm-ssn-field" _ngcontent-web-shell-c2636517360="" aria-describedby="CONFIRM_SSN_error" class="grv-textfield__input ng-untouched ng-pristine ng-invalid"/>
+
+2024-09-11 12:52:51,662 - INFO - Logged ssn: 617805096 in submission_data
+2024-09-11 12:52:52,664 - INFO - Processing field at index 15 (Rank: 53): _id                                       66dd0f01bd6a0335850c3153
+field_name                                        ssa-verification
+field_type                                                   radio
+locator_type                                                    ID
+locator_value                       SSN_VERIFICATION_AUTHORIZATION
+optional                                                     False
+rank                                                            53
+url              https://www.capitalone.com/apply/credit-cards/...
+website_name                                Capital One Prequalify
+Name: 15, dtype: object
+2024-09-11 12:52:52,666 - INFO - Waiting for element with selector: SSN_VERIFICATION_AUTHORIZATION
+2024-09-11 14:00:44,827 - INFO - Website FactorTrust upserted successfully with ID: None
+2024-09-11 14:00:44,829 - INFO - Website AMEX Prequalify upserted successfully with ID: None
+2024-09-11 14:00:44,830 - INFO - Website Capital One Prequalify upserted successfully with ID: None
+2024-09-11 14:00:44,831 - INFO - Website American Airlines AAdvantage Enrollment upserted successfully with ID: None
+2024-09-11 14:00:44,832 - INFO - Website US Alliance Prequalify upserted successfully with ID: None
+2024-09-11 14:00:44,833 - INFO - Website OptOutPreScreen upserted successfully with ID: None
+2024-09-11 14:00:44,834 - INFO - Website ExxonRewards upserted successfully with ID: None
+2024-09-11 14:00:44,835 - INFO - Website SageStream upserted successfully with ID: None
+2024-09-11 14:00:44,836 - INFO - Website Credit One Prequalify upserted successfully with ID: None
+2024-09-11 14:00:44,838 - INFO - Website IHG Rewards upserted successfully with ID: None
+2024-09-11 14:00:44,839 - INFO - Website Fuel Rewards upserted successfully with ID: None

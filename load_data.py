@@ -132,9 +132,9 @@ def load_form_data_from_csv(csv_file_path):
 
 if __name__ == "__main__":
     # Path to the CSV file containing individual data
-    csv_file_path = r'/Users/eleven23/Desktop/Enhance-Public-Record-Bot/PublicRecord.AI/List of Individuals.csv'
+    csv_file_path = r'C:\Users\slc\Enhance-Public-Record-Bot\PublicRecord.AI\List of Individuals.csv'
     load_individuals_from_csv(csv_file_path)
 
     # Path to the CSV file containing form data
-    form_data_csv_file_path = r'/Users/eleven23/Desktop/Enhance-Public-Record-Bot/PublicRecord.AI/form_data.csv'
+    form_data_csv_file_path = r'C:\Users\slc\Enhance-Public-Record-Bot\PublicRecord.AI\form_data.csv'
     load_form_data_from_csv(form_data_csv_file_path)
