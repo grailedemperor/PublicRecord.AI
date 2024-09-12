@@ -4,6 +4,7 @@ import pandas as pd
 import logging
 from urllib.parse import quote_plus  # Import this for URL encoding
 from dotenv import load_dotenv
+from bson import ObjectId
 
 load_dotenv()
 
@@ -204,32 +205,44 @@ def upsert_individual(db, opt_in, first_name, last_name, name, full_name, email,
 def upsert_submission_record(db, individual_id, website_id):
     try:
         submissions_collection = db['submissions']
+        
+        # Ensure that website_id is an ObjectId
+        if not isinstance(website_id, ObjectId):
+            website_id = ObjectId(website_id)
+
         submission_record = {
             "individual_id": individual_id,
             "website_id": website_id,
             "is_submitted": False  # Default to False, will be updated later
         }
+
         result = submissions_collection.update_one(
-            {"individual_id": individual_id, "website_id": website_id},
-            {"$setOnInsert": submission_record},  # Insert only if it doesn't already exist
+            {"individual_id": str(individual_id), "website_id": website_id},
+            {"$setOnInsert": submission_record},
             upsert=True
         )
         logging.info(f"Upserted submission record with individual_id: {individual_id}, website_id: {website_id}")
-        return result.upserted_id or submissions_collection.find_one({"individual_id": individual_id, "website_id": website_id})['_id']
+        return result.upserted_id or submissions_collection.find_one({"individual_id": str(individual_id), "website_id": website_id})['_id']
     except Exception as e:
         logging.error(f"Error upserting submission record: {e}")
         raise
 
-
 def check_submission_status(db, individual_id, website_id):
     try:
-        # Access the 'submissions' collection
         submissions_collection = db['submissions']
-        
-        # Find the submission record by individual and website
-        submission = submissions_collection.find_one({"individual_id": individual_id, "website_id": website_id})
 
-        # Log whether a submission was found and its status
+        # Ensure website_id is an ObjectId
+        if not isinstance(website_id, ObjectId):
+            website_id = ObjectId(website_id)
+        
+        # Always treat individual_id as a string
+        query = {"website_id": website_id, "individual_id": str(individual_id)}
+        
+        logging.info(f"Querying with: {query}")
+        
+        # Query the database for the submission record
+        submission = submissions_collection.find_one(query)
+
         if submission:
             is_submitted = submission.get('is_submitted', False)
             logging.info(f"Submission found for individual {individual_id} and website {website_id}. is_submitted: {is_submitted}")
@@ -246,7 +259,7 @@ def update_submission_status(db, individual_id, website_id):
     try:
         submissions_collection = db['submissions']
         submissions_collection.update_one(
-            {"individual_id": individual_id, "website_id": website_id},
+            {"individual_id": str(individual_id), "website_id": website_id},
             {"$set": {"is_submitted": True}}
         )
         logging.info(f"Marked submission as completed for individual {individual_id} on website {website_id}.")

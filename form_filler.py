@@ -156,15 +156,15 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
         logging.info(f"Mapped field {field_name} to {actual_data_key}")
 
         if field_type == 'input':
-            element = await page.wait_for_selector(f"input#{selector}, input[name*='Confirm'], input[type='submit']", timeout=2000)
+            element = await page.wait_for_selector(f"input#{selector}, input[{selector}], input[name*='Confirm'], input[type='submit']", timeout=2000)
         elif field_name in ['submit', 'final-submit'] or field_type == 'button':
-            element = await page.wait_for_selector(f"input[type='submit']#{selector}, button#{selector}, input[value='Submit']", timeout=2000)
+            element = await page.wait_for_selector(f"input[type='submit']#{selector}, button[{selector}], button#{selector}, input[value='Submit']", timeout=2000)
         elif field_type == 'select':
-            element = await page.wait_for_selector(f"select#{selector}", timeout=2000)
+            element = await page.wait_for_selector(f"select#{selector}, select[{selector}]", timeout=2000)
         elif field_type == 'checkbox':
             element = await page.wait_for_selector(f"input[type='checkbox']#{selector}", timeout=2000)
         elif field_type == 'radio':
-            element = await page.wait_for_selector(f"input[type='radio']#{selector}", timeout=2000)
+            element = await page.wait_for_selector(f"input[type='radio']#{selector}", timeout=2000)  
         else:
             logging.warning(f"Unknown field type: {field_type} for {field_name}. Defaulting to input.")
             element = await page.wait_for_selector(f"input#{selector}", timeout=2000)
@@ -178,8 +178,21 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
                 if actual_data_key in individual_data and isinstance(individual_data[actual_data_key], str):
                     filled_value = individual_data[actual_data_key]
                     logging.info(f"Filling field {field_name} with data: {filled_value}")
-                    await element.fill(filled_value)  # Fill the input with data
-                    submission_data[actual_data_key] = filled_value  # Log the **actual value** filled
+                    try:
+                        # Try using the fill method first
+                        await element.fill(filled_value)  
+                        submission_data[actual_data_key] = filled_value  # Log the **actual value** filled
+                    except Exception as fill_error:
+                        # If fill fails, fallback to the type method
+                        logging.error(f"Error using element.fill for {field_name}: {fill_error}. Attempting to use page.type instead.")
+            
+                        try:
+                            # Fallback: Mimic typing with a small delay
+                            await page.type(selector, filled_value, delay=100)  
+                            submission_data[actual_data_key] = filled_value  # Log the **actual value** filled
+                        except Exception as type_error:
+                            # Log if both fill and type fail
+                            logging.error(f"Failed to type into field {field_name}: {type_error}")
 
             # Handle radio buttons
             elif field_type == 'radio' and not await element.is_checked():
@@ -308,8 +321,8 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
             field_type = row.get('field_type')
             logging.info(f"Processing field at index {index} (Rank: {row.get('rank', 'N/A')}): {row}")
 
-            #if field_name == 'final-submit':
-              #  final_submit_found = True
+            if field_name == 'final-submit':
+                final_submit_found = True
 
             try:
                 #logging.info(f"Field: {field_name}, Selector: {selector}, Type: {field_type}")
@@ -334,7 +347,7 @@ async def handle_form_filling(page, individual_data, form_data, field_locators, 
                 await asyncio.sleep(1)
 
                 # If the final-submit button was successfully clicked, take a screenshot after submission
-                if 'final-submit' in submission_data and submission_data['final-submit'] == 'clicked':
+                if field_name == 'final-submit' and final_submit_found and 'final-submit' in submission_data and submission_data['final-submit'] == 'clicked':
                     logging.info(f"Final submit button clicked for {individual_name} on {website_name}. Waiting for 2 seconds before taking screenshot.")
                     await asyncio.sleep(2)  # Wait for 2 seconds before taking the screenshot
                     screenshot_path = f"successful_submission/confirmation_screenshot_{website_name}_{individual_name}.png"
@@ -512,10 +525,13 @@ async def process_websites_async(websites, db, model, vectorizer, browser):
             individual_name = f"{individual_data.get('first name', 'Unknown')} {individual_data.get('last name', 'Unknown')}"
             logging.info(f"Starting submission process for individual: {individual_name} (ID: {individual_data['_id']})")
 
+            # Convert individual_id to ObjectId if needed
+            individual_id = ObjectId(individual_data['_id'])
+
             # Filter out websites where submission is already completed for this individual
             websites_to_process = [
                 website for website in websites
-                if not check_submission_status(db, individual_data['_id'], website['_id'])
+                if not check_submission_status(db, individual_id, ObjectId(website['_id']))
             ]
 
             if not websites_to_process:
@@ -524,7 +540,7 @@ async def process_websites_async(websites, db, model, vectorizer, browser):
 
             # Loop through remaining websites for this individual
             for website in websites_to_process:
-                website_id = website['_id']
+                website_id = ObjectId(website['_id'])
                 url = website['url']
                 category = website['category']
                 website_name = website['name']
@@ -559,7 +575,7 @@ async def process_websites_async(websites, db, model, vectorizer, browser):
 
         # After processing all individuals and their websites
         remaining_tasks = any(
-            not check_submission_status(db, individual['_id'], website['_id'])
+            not check_submission_status(db, ObjectId(individual['_id']), ObjectId(website['_id']))
             for individual in individual_data_list
             for website in websites
         )
@@ -573,6 +589,7 @@ async def process_websites_async(websites, db, model, vectorizer, browser):
     except Exception as e:
         logging.error(f"An error occurred while processing websites: {str(e)}", exc_info=True)
         raise
+
 
 # Function to close the browser
 async def close_browser(browser):
