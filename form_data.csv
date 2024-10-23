@@ -19,13 +19,13 @@ FactorTrust,https://factortrust.com/consumer/optout.aspx,final-submit,button,Con
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,first-name,input,firstName,ID,FALSE,18
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,last-name,input,lastName,ID,FALSE,19
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,address-1,input,address1,ID,FALSE,20
-AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,address-2,input,input[data-test-pqo="address2"],CSS_SELECTOR,TRUE,21
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,address-2,input,data-test-pqo="address2",CSS_SELECTOR,TRUE,21
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,city,input,city,ID,FALSE,22
-AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,state,select,select[name="state"],CSS_SELECTOR,FALSE,23
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,state,select,name="state",CSS_SELECTOR,FALSE,23
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,zip,input,zipCode,ID,FALSE,24
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,ssn_part3,input,ssn,ID,FALSE,25
 AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,income,input,income,ID,FALSE,26
-AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,final-submit,button,button[type="submit"],CSS_SELECTOR,FALSE,27
+AMEX Prequalify,https://card.americanexpress.com/d/pre-qualified-offers/,final-submit,button,type="submit",CSS_SELECTOR,FALSE,27
 Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,submit,button,.next-button-container > button:nth-child(1),CSS_SELECTOR,FALSE,28
 Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,first-name,input,FIRST_NAME,ID,FALSE,29
 Capital One Prequalify,https://www.capitalone.com/apply/credit-cards/preapprove/?landingPage=ehpnav,last-name,input,LAST_NAME,ID,FALSE,30

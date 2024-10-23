@@ -156,22 +156,127 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
         logging.info(f"Mapped field {field_name} to {actual_data_key}")
 
         if field_type == 'input':
-            element = await page.wait_for_selector(f"input#{selector}, input[{selector}], input[name*='Confirm'], input[type='submit']", timeout=2000)
+            element = None  # Initialize the element variable
+            selectors = [
+                f"input#{selector}",  # ID selector
+                f"input[{selector}]",  # Attribute selector
+                "input[name*='Confirm']",  # Fallback for "Confirm" input
+                "input[type='submit']"  # Submit button as a fallback
+            ]
+
+            # Try each selector in sequence until one works
+            for sel in selectors:
+                try:
+                    element = await page.wait_for_selector(sel, timeout=2000)
+                    if element:
+                        logging.info(f"Element found using selector: {sel}")
+                        break  # Stop if the element is found
+                except Exception as e:  # Catch any other exceptions like selector parsing errors
+                    logging.warning(f"Selector {sel} not found, trying next...")
+                    logging.error(f"Error trying selector {sel}: {e}")    
+            
         elif field_name in ['submit', 'final-submit'] or field_type == 'button':
-            element = await page.wait_for_selector(f"input[type='submit']#{selector}, button[{selector}], button#{selector}, input[value='Submit']", timeout=2000)
+            element = None
+            selectors = [
+                f"input[type='submit']#{selector}",  # Submit button ID selector
+                f"button[{selector}]",  # Button attribute selector
+                f"button#{selector}",  # Button ID selector
+                "input[value='Submit']"  # Fallback to submit input
+            ]
+
+            # Try each selector for button fields
+            for sel in selectors:
+                try:
+                    element = await page.wait_for_selector(sel, timeout=2000)
+                    if element:
+                        logging.info(f"Button element found using selector: {sel}")
+                        break
+                except Exception as e:  # Catch any other exceptions like selector parsing errors
+                    logging.warning(f"Selector {sel} not found, trying next...")
+                    logging.error(f"Error trying selector {sel}: {e}") 
+
         elif field_type == 'select':
-            element = await page.wait_for_selector(f"select#{selector}, select[{selector}]", timeout=2000)
+            element = None
+            selectors = [
+                f"select#{selector}",  # Select by ID
+                f"select[{selector}]"  # Select by attribute
+            ]
+
+            # Try each selector for select fields
+            for sel in selectors:
+                try:
+                    element = await page.wait_for_selector(sel, timeout=2000)
+                    if element:
+                        logging.info(f"Select element found using selector: {sel}")
+                        break
+                except Exception as e:  # Catch any other exceptions like selector parsing errors
+                    logging.warning(f"Selector {sel} not found, trying next...")
+                    logging.error(f"Error trying selector {sel}: {e}") 
+
         elif field_type == 'checkbox':
-            element = await page.wait_for_selector(f"input[type='checkbox']#{selector}", timeout=2000)
+            element = None
+            selectors = [
+                f"input[type='checkbox']#{selector}",  # Checkbox by ID
+                f"input[type='checkbox'][{selector}]"  # Checkbox by attribute
+            ]
+
+            # Try each selector for checkbox fields
+            for sel in selectors:
+                try:
+                    element = await page.wait_for_selector(sel, timeout=2000)
+                    if element:
+                        logging.info(f"Checkbox element found using selector: {sel}")
+                        break
+                except Exception as e:  # Catch any other exceptions like selector parsing errors
+                    logging.warning(f"Selector {sel} not found, trying next...")
+                    logging.error(f"Error trying selector {sel}: {e}") 
+
         elif field_type == 'radio':
-            element = await page.wait_for_selector(f"input[type='radio']#{selector}", timeout=2000)  
+            element = None
+            selectors = [
+                f"input[type='radio']#{selector}",  # Radio button by ID
+                f"input[type='radio'][{selector}]"  # Radio button by attribute
+            ]
+
+            # Try each selector for radio button fields
+            for sel in selectors:
+                try:
+                    element = await page.wait_for_selector(sel, timeout=2000)
+                    if element:
+                        logging.info(f"Radio button element found using selector: {sel}")
+                        break
+                except Exception as e:  # Catch any other exceptions like selector parsing errors
+                    logging.warning(f"Selector {sel} not found, trying next...")
+                    logging.error(f"Error trying selector {sel}: {e}") 
+
         else:
             logging.warning(f"Unknown field type: {field_type} for {field_name}. Defaulting to input.")
-            element = await page.wait_for_selector(f"input#{selector}", timeout=2000)
+            element = None
+            selectors = [
+                f"input#{selector}",  # Default to ID-based input
+                f"input[{selector}]"  # Fallback to attribute-based input
+            ]
+
+            for sel in selectors:
+                try:
+                    element = await page.wait_for_selector(sel, timeout=2000)
+                    if element:
+                        logging.info(f"Default input element found using selector: {sel}")
+                        break
+                except Exception as e:  # Catch any other exceptions like selector parsing errors
+                    logging.warning(f"Selector {sel} not found, trying next...")
+                    logging.error(f"Error trying selector {sel}: {e}") 
 
         if element:
             logging.info(f"Element with selector: {selector} found.")
             await element.hover()
+
+            # Enable browser logging
+            page.on('console', lambda msg: logging.info(f'Console Log: {msg.type()}: {msg.text()}'))
+            page.on('pageerror', lambda exception: logging.error(f'Unhandled Exception: {exception}'))
+            page.on('framenavigated', lambda frame: logging.info(f'Frame navigated to {frame.url()}'))
+            page.on('dialog', lambda dialog: logging.info(f'Dialog opened: {dialog.message}'))
+            
 
             # Handle input fields where data needs to be filled
             if field_type == 'input':
@@ -179,16 +284,46 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
                     filled_value = individual_data[actual_data_key]
                     logging.info(f"Filling field {field_name} with data: {filled_value}")
                     try:
-                        # Try using the fill method first
-                        await element.fill(filled_value)  
-                        submission_data[actual_data_key] = filled_value  # Log the **actual value** filled
+                        # If the input type is password, use JavaScript evaluation
+                        input_type = await element.get_attribute('type')
+                        if input_type == 'password':
+                            logging.info(f"Field {field_name} is a password field, using JavaScript evaluation.")
+                            
+                            # Adjust the selector format for JavaScript based on the type of selector used
+                            if selector.startswith('#'):
+                                js_selector = f"input{selector}"  # ID selector
+                            elif '=' in selector:
+                                js_selector = f"input[{selector}]"  # Attribute selector
+                            else:
+                                js_selector = f"input#{selector}"  # Default to ID selector
+                            
+                            # Ensure element exists in JavaScript before setting its value
+                            js_script = f'''
+                            var el = document.querySelector("{js_selector}");
+                            if (el) {{
+                                el.value = "{filled_value}";
+                                var nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+                                nativeInputValueSetter.call(el, "{filled_value}");
+                                var event = new Event('input', {{ bubbles: true }});
+                                el.dispatchEvent(event);
+                            }} else {{
+                                throw new Error("Element not found in DOM for selector: {selector}");
+                            }}
+                            '''
+                            await page.evaluate(js_script)
+                        else:
+                            await element.fill(filled_value)  # Try using the fill method first
+                            submission_data[actual_data_key] = filled_value  # Log the actual value filled
+
                     except Exception as fill_error:
                         # If fill fails, fallback to the type method
-                        logging.error(f"Error using element.fill for {field_name}: {fill_error}. Attempting to use page.type instead.")
+                        logging.error(f"Error using element.fill for {field_name}: {fill_error}. Attempting to use page.keyboard.type instead.")
             
                         try:
                             # Fallback: Mimic typing with a small delay
-                            await page.type(selector, filled_value, delay=100)  
+                            # Instead of setting value directly, simulate typing with small delays
+                            await element.click()  # Ensure the field is focused
+                            await page.keyboard.type(filled_value, delay=100)  # Simulate typing with delay
                             submission_data[actual_data_key] = filled_value  # Log the **actual value** filled
                         except Exception as type_error:
                             # Log if both fill and type fail
@@ -221,6 +356,7 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
             logging.info(f"Clicked {field_name} successfully.")
             return element
         else:
+            logging.warning(f"Element with selector: {selector} not found after trying all options.")
             logging.warning(f"Element with selector: {selector} not found. Attempting JavaScript fallback.")
 
             # JS Fallback using getElementById
@@ -244,6 +380,7 @@ async def identify_and_click_field(page, selector, field_name, field_type, indiv
     except Exception as e:
         logging.error(f"Error locating or clicking field (Selector: {selector}, Field: {field_name}): {e}")
         return None
+
 
 async def scroll_to_element(page, selector):
     try:
